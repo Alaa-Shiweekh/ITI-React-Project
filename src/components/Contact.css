@@ -1,0 +1,146 @@
+body{
+    font-family: "Playfair Display", serif;
+  
+      background-color: #f8f9fa;
+  }
+  .mt-5{
+    margin-bottom: 50px;
+  }
+  
+  .contact-page {
+    padding: 10px 0;
+    
+  }
+  
+  .contact-page h2 {
+    font-family: 'Times New Roman', serif;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    
+    padding: 0 20px;
+    
+    
+  }
+  
+  .input_{
+   
+      border: 0;
+      padding: 0 20px 0 40px;
+      background-color: transparent;
+      border-bottom: 1px solid var(--gray-dark, #000);
+      font-size: var(--font-size-body, 14px);
+      line-height: 44px;
+      height: 44px;
+  }
+  
+  .btn-primary {
+    background-color: #4a402a;
+    border-color: #4a402a;
+  }
+  
+  .contact-info {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .contact-info p {
+    margin: 10px 0;
+  }
+  
+  .social-icons i {
+    font-size: 24px;
+    margin-right: 15px;
+    color: #4a402a;
+  }
+  
+  .social-icons i:hover {
+    color: #333;
+  }
+  .col-md-4{
+    background-color:#f6f3ef ;
+    
+  }
+  
+  .contact-info{
+    background-color:#f6f3ef ;
+    padding-top: 40px;
+      padding-bottom: 30px;
+  }
+  .contact-info p{
+    margin-bottom: 40px;
+    border-bottom: 1px solid #dddcda ;
+    font-family: "Playfair Display", serif;
+    
+  }
+  .contact-info strong{
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+   
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group input, .form-group textarea {
+    width: 100%;
+  }
+  
+  .btn-primary {
+    background-color: #4a402a;
+    border-color: #4a402a;
+  }
+  
+  .sletter{
+    background-color: #f6f3ef;
+  }
+  
+  .botton{
+    margin: 20px;
+      font-size: 15px;
+      line-height: 45px;
+      fill: #000;
+      color: #000;
+      background-color: #02010100;
+      border-style: solid;
+      border-width: 1px;
+      background-color: #65532f;
+      border-color: #000;
+      padding: 0 40px;
+      color: white;
+  }
+  
+  
+  .botton:hover{
+    background-color: #f0efec;
+      border-color:  #65532f;
+      color: #65532f;
+  }
+  
+  .botton_{
+    margin-left: 30px;
+    font-size: 15px;
+      line-height: 45px;
+      fill: #000;
+      color: #000;
+      background-color: #02010100;
+      border-style: solid;
+      border-width: 1px;
+      
+      padding: 0 20px;
+      border-color: #000;
+      background-color: #65532f;
+      border-color: white;
+      color: white;
+  }
+  
+  .botton_:hover{
+    background-color: #f7f5f3;
+      border-color:  #65532f;
+      color: #65532f;
+  }
