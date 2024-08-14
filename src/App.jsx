@@ -1,29 +1,53 @@
-import './App.css'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Layout from './components/Layout'
-import Home from './components/Home'
-import Products from './components/Products'
-import Shop from './components/Shop'
-import Contact from './components/Contact'
-import About from './components/About'
-import Notfound from './components/Notfound'
-import Login from './components/Login'
+import React, { useState } from 'react';
+import './App.css';
+import { createBrowserRouter, RouterProvider, Navigate } from 'react-router-dom';
+import Layout from './components/Layout';
+import Home from './components/Home';
+import Products from './components/Products';
+import Shop from './components/Shop';
+import Contact from './components/Contact';
+import About from './components/About';
+import Notfound from './components/Notfound';
+import Login from './components/Login';
+import Register from './components/Register';
+
 function App() {
-  let routes = createBrowserRouter([
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isRegistered, setIsRegistered] = useState(false);
+
+  const handleLoginSuccess = () => {
+    setIsLoggedIn(true);
+  };
+
+  const handleRegisterSuccess = () => {
+    setIsRegistered(true);
+    setIsLoggedIn(true);
+  };
+
+  const routes = createBrowserRouter([
     {
-      path: '/', element: <Layout></Layout>, children: [
-        { index: true, element: <Home></Home> },
-        { path: '/products', element: <Products></Products> },
-        { path: '/shop', element: <Shop></Shop> },
-        { path: '/contact', element: <Contact></Contact> },
-        { path: '/about', element: <About></About> },
-        { path: '/login', element: <Login></Login> },
-        { path: '*', element: <Notfound></Notfound> },
-      ]
-    }
-  ])
+      path: '/',
+      element: <Layout />,
+      children: [
+        { index: true, element: <Home /> },
+        { path: 'products', element: <Products /> },
+        { path: 'shop', element: <Shop /> },
+        { path: 'contact', element: <Contact /> },
+        { path: 'about', element: <About /> },
+        { path: 'login', element: <Login onLoginSuccess={handleLoginSuccess} /> },
+        { path: 'register', element: <Register onRegisterSuccess={handleRegisterSuccess} /> },
+        {
+          path: 'buy',
+          element: isRegistered ? (isLoggedIn ? <Navigate to="/purchase" /> : <Navigate to="/login" />) : <Navigate to="/register" />
+        },
+        { path: '*', element: <Notfound /> },
+      ],
+    },
+  ]);
+
   return (
-    <RouterProvider router={routes}></RouterProvider>
-  )
+    <RouterProvider router={routes} />
+  );
 }
-export default App
+
+export default App;
