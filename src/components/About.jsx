@@ -53,6 +53,10 @@ export default function About() {
   
 
       <div className="row my-4">
+        
+        <div className="col-md-6">
+          <img src={about2} alt="Enhancing Your Style" className="img-fluid" />
+        </div>
         <div className="col-md-6 d-flex align-items-center">
           <div className='textContent'>
             <h2>Enhancing Your Style</h2>
@@ -60,22 +64,19 @@ export default function About() {
             <button className="btn btn-primary">Shop Now</button>
           </div>
         </div>
-        <div className="col-md-6">
-          <img src={about2} alt="Enhancing Your Style" className="img-fluid" />
-        </div>
       </div>
       <div className="row my-4">
-        
-        <div className="col-md-6">
-          <img src={about3} alt="Ensemble With Earrings" className="img-fluid" />
-        </div>
-        <div className="col-md-6 d-flex align-items-center">
+      <div className="col-md-6 d-flex align-items-center">
           <div className='textContent'>
             <h2>Ensemble With Earrings</h2>
             <p>Genuine gold and silver jewelry for young people, elegant design, diverse designs help you perfect and transform your daily style.</p>
             <button className="btn btn-primary">Shop Now</button>
           </div>
         </div>
+        <div className="col-md-6">
+          <img src={about3} alt="Ensemble With Earrings" className="img-fluid" />
+        </div>
+        
       </div>
    
     <div className="container mt-5">
