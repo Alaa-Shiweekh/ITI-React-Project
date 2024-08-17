@@ -2,8 +2,6 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-// import slide1 from '../assets/slide1.png';
-// import slide2 from '../assets/slide2.jpg';
 import slider1 from '../assets/slider.jpg';
 import slider2 from '../assets/slider-2.jpg';
 import slider3 from '../assets/slider-3.jpg';
@@ -21,12 +19,12 @@ export default function Home() {
   return (
     <>
       <section>
-        <div className="container mx-auto ">
+        <div className="container">
           <Slider {...settings}>
             <div>
               <img src={slider1} alt="Slide 1" className=' img-fluid w-100' />
             </div>
-            <div>
+            <div >
               <img src={slider2} alt="Slide 2" className=' img-fluid w-100' />
             </div>
             <div>
@@ -73,7 +71,6 @@ export default function Home() {
                 <p className='text-muted'>Outstanding premium support</p>
               </div>
             </div>
-           
           </div>
         </div>
       </section>

@@ -30,19 +30,21 @@ nav {
     margin-top: -12px;
 }
  
-
+i{
+  cursor: pointer;
+}
   
 /*About Page*/
 body {
-    font-family: "Playfair Display", serif;
+    /* font-family: "Playfair Display", serif; */
 
     background-color: #f8f9fa;
-    width: 100%;
+    /* width: 100%; */
   }
-.container {
+/* .container {
     margin-top: 30px;
 
-  }
+  } */
 
   @media (max-width:768px) {
     .col-md-3 
@@ -206,7 +208,12 @@ body {
   transition: 0.3s;
   bottom: -100%;
 }
-
-
-
-
+.header-cat{
+  background-image: url(../src/assets/about1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+  width: 100%;
+  margin-top: 7rem;
+}

@@ -1,0 +1,72 @@
+{
+    "product": [
+        {
+            "id":"1",
+            "name": "Chicago Hoops",
+            "price": 
+                40.00,
+            
+            "image": "/Products/earing1.jpg",
+            "imagehover":"/Products/earing1hover.jpg",
+            "hot": true
+        },
+        {
+            "id":"2",
+            "name": "Dog Charm",
+            "price": 200.00,
+            "image": "/Products/earing2.jpg",
+            "imagehover":"/Products/earing2hover.jpg"
+        },
+        {
+            "id":"3",
+            "name": "Gold Bold Mini Hoops",
+            "price": [
+                25.00,
+                30.00
+            ],
+            "discount": 17,
+            "image": "/Products/earing3.jpg",
+            "imagehover":"/Products/earing3hover.jpg",
+            "hot": true
+        },
+        
+        {
+            "id":"4",
+            "name": "Gold Core Bangle",
+            "price": [
+                40.00,
+                88.00
+            ],
+            "image": "/Products/braclet1.jpg",
+            "imagehover":"/Products/braclet1hover.jpg"
+        },
+        {
+            "id":"5",
+            "name": "Green Aventurine Moon Ring",
+            "price": 200.00,
+            "image": "/Products/ring1.jpg",
+            "imagehover":"/Products/ring1hover.jpg"
+        },
+        {
+            "id":"6",
+            "name": "La Perla Hoops",
+            "price": [
+                70.00,
+                90.00
+            ],
+            "image":"/Products/earing4.jpg",
+            "imagehover": "/Products/earing4hover.jpg"
+        }
+    ]
+    ,
+    "users": [
+    {
+      "id": "263b",
+      "name": "Hanan",
+      "email": "hananamer312003@gmail.com",
+      "password": "Hanan123",
+      "repassword": "Hanan123",
+      "phone": "01212734139"
+    }
+  ]
+}

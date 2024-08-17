@@ -3,13 +3,13 @@ import './App.css';
 import { createBrowserRouter, RouterProvider, Navigate } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './components/Home';
-import Products from './components/Products';
 import Shop from './components/Shop';
 import Contact from './components/Contact';
 import About from './components/About';
 import Notfound from './components/Notfound';
 import Login from './components/Login';
 import Register from './components/Register';
+import ProductDeatail from './components/ProductDeatail';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -30,10 +30,10 @@ function App() {
       element: <Layout />,
       children: [
         { index: true, element: <Home /> },
-        { path: 'products', element: <Products /> },
         { path: 'shop', element: <Shop /> },
         { path: 'contact', element: <Contact /> },
         { path: 'about', element: <About /> },
+        { path: 'productdetails/:id', element: <ProductDeatail /> },
         { path: 'login', element: <Login onLoginSuccess={handleLoginSuccess} /> },
         { path: 'register', element: <Register onRegisterSuccess={handleRegisterSuccess} /> },
         {

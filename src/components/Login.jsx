@@ -1,16 +1,59 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import './Login.css';
 import sign from '../assets/sign.jpg';
+import { useFormik } from 'formik';
+import axios from 'axios';
+import { Link, useNavigate } from 'react-router-dom';
+import { AuthContext } from '../Context/AuthContext';
 
-export default function Login({ onLoginSuccess }) {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
+export default function Login() {
+  let { login } = useContext(AuthContext);
+  let navigate = useNavigate();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Login successful:', { username, password });
-    onLoginSuccess();
-  };
+  function handelLogin(values) {
+    axios.get("http://localhost:3000/users", values)
+      .then(res => {
+        console.log(res.data);
+        res.data.map(user => {
+          if (user.email === values.email) {
+            if (user.password === values.password) {
+              login(user);
+              navigate('/');
+            } else {
+              alert("wrong pass");
+            }
+          } else if (values.email == "") {
+            alert('email not found');
+          }
+        });
+      })
+      .catch((err) => {
+        console.log(err);
+        alert('Registration failed. Please try again.');
+      });
+  }
+
+  function validation(values) {
+    let errors = {};
+
+    if (!values.email)
+      errors.email = 'Email is Required';
+    else if (!/^[a-zA-Z0-9.-]+@[a-zA-Z]+\.[a-zA-Z]{2,}$/i.test(values.email))
+      errors.email = 'Email is not valid';
+    if (!values.password)
+      errors.password = 'Password is Required';
+
+    return errors;
+  }
+
+  let formik = useFormik({
+    initialValues: {
+      email: '',
+      password: '',
+    },
+    validate: validation,
+    onSubmit: handelLogin
+  });
 
   return (
     <div className="login-wrapper">
@@ -18,32 +61,38 @@ export default function Login({ onLoginSuccess }) {
         <button className="close-btn" onClick={() => window.history.back()}>✕</button>
         <div className="login-header">
           <img src={sign} alt="Login Banner" />
-          <span>Sign In</span>
+          <span>Create An Account</span>
         </div>
-
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={formik.handleSubmit}>
           <div className="form-group">
             <input
-              type="text"
-              placeholder="Username*"
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
-              required
+              type="email"
+              placeholder="Email*"
+              id='email'
+              value={formik.values.email}
+              onChange={formik.handleChange}
             />
+            {formik.errors.email && formik.touched.email ?
+              <div className="text-sm text-danger rounded-lg bg-body-tertiary p-4 text-center" role="alert">
+                <span className="font-medium text-center">{formik.errors.email}</span>
+              </div> : ''}
           </div>
           <div className="form-group">
             <input
               type="password"
               placeholder="Password*"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              required
+              id='password'
+              value={formik.values.password}
+              onChange={formik.handleChange}
             />
+            {formik.errors.password && formik.touched.password ?
+              <div className="text-sm text-danger rounded-lg bg-body-tertiary p-4 text-center" role="alert">
+                <span className="font-medium text-center">{formik.errors.password}</span>
+              </div> : ''}
           </div>
-          <a href="#" className="forgot-password">Lost your password?</a>
-          <button type="submit" className="signin-btn">Sign In</button>
-          <button type="button" className="create-account-btn" onClick={() => window.location.href = '/register'}>Create An Account</button>
+          <button type="submit" className="Login-btn">Login</button>
         </form>
+        <p className='text-center'>Don`t Have Account?<Link to='/register' className=" text-dark">Register</Link></p>
       </div>
     </div>
   );

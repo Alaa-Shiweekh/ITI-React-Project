@@ -61,7 +61,7 @@ input {
 }
 
 button {
-  width: 100%;
+  /* width: 100%; */
   padding: 10px;
   border: none;
   cursor: pointer;
@@ -74,10 +74,10 @@ button {
   text-align: center;
   background-color: black;
   color: white;
-  width: 500px;
+  /* width: 500px; */
   margin-bottom: 15px;
   margin-left: 50px;
-  height: 60px;
+  /* height: 60px; */
   font-size: 20px;
 
 }

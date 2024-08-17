@@ -2,6 +2,7 @@ import React from 'react'
 
 export default function Footer() {
   return (
+  <>
     <footer>
       <section >
         <div className="container text-center text-md-start mt-5">
@@ -94,6 +95,7 @@ export default function Footer() {
       </section>
         </div>
     </footer>
+  </>
 
   )
 }
