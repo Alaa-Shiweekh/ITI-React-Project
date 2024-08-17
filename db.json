@@ -56,6 +56,48 @@
             ],
             "image":"/Products/earing4.jpg",
             "imagehover": "/Products/earing4hover.jpg"
+        },
+        {
+            "id":"7",
+            "name": "LABRADORITE MOON RING",
+            "price": 40.00,
+            "image":"/Products/ring2.jpg",
+            "imagehover": "/Products/ring2hover.jpg"
+        },
+        {
+            "id":"8",
+            "name": "LARGE SUGAR EARINGS",
+            "price": 90.00,
+            "image":"/Products/earing5.jpg",
+            "imagehover": "/Products/earing5hover.jpg"
+        },
+        {
+            "id":"9",
+            "name": "LAURA BRACELET",
+            "price": 120.00,
+            "image":"/Products/braclet2.jpg",
+            "imagehover": "/Products/braclet2hover.jpg"
+        },
+        {
+            "id":"10",
+            "name": "LINDA NECKLACE",
+            "price": 110.00,
+            "image":"/Products/nec1.jpg",
+            "imagehover": "/Products/nec1hover.jpg"
+        },
+        {
+            "id":"11",
+            "name": "MINI MAGMA HOOPS",
+            "price": 250.00,
+            "image":"/Products/earing6.jpg",
+            "imagehover": "/Products/earing6hover.jpg"
+        },
+        {
+            "id":"12",
+            "name": "NUMBER 1 CHARM",
+            "price": 65.00,
+            "image":"/Products/numbers.jpg",
+            "imagehover": "/Products/numbershover.jpg"
         }
     ]
     ,
