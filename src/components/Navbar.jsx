@@ -1,8 +1,7 @@
 import React, { useContext } from 'react';
 import logo from '../assets/logo.png';
 import { NavLink } from 'react-router-dom';
-import { AuthContext } from '../Context/AuthContext'; // Import AuthContext from the correct path
-
+import { AuthContext } from '../Context/AuthContext';
 export default function Navbar() {
     let { isLogin, logout } = useContext(AuthContext);
 
@@ -51,11 +50,12 @@ export default function Navbar() {
                                 0
                             </span>
                         </i>
-                        <i className="fa-solid fa-bag-shopping position-relative fa-lg">
+                       <NavLink to='/cart'> <i className="fa-solid fa-bag-shopping position-relative fa-lg">
                             <span className="position-absolute top-0 translate-middle badge rounded-circle main-bg mx-1 p-1">
                                 0
                             </span>
                         </i>
+                        </NavLink>
                     </div>
                 </div>
             </div>

@@ -10,6 +10,7 @@ import Notfound from './components/Notfound';
 import Login from './components/Login';
 import Register from './components/Register';
 import ProductDeatail from './components/ProductDeatail';
+import Cart from './components/Cart';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -33,6 +34,7 @@ function App() {
         { path: 'shop', element: <Shop /> },
         { path: 'contact', element: <Contact /> },
         { path: 'about', element: <About /> },
+        { path: 'cart', element: <Cart /> },
         { path: 'productdetails/:id', element: <ProductDeatail /> },
         { path: 'login', element: <Login onLoginSuccess={handleLoginSuccess} /> },
         { path: 'register', element: <Register onRegisterSuccess={handleRegisterSuccess} /> },
