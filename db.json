@@ -1,5 +1,27 @@
 {
-  "product": [
+  "categories": [
+    {
+      "key": "ring",
+      "name": "Rings",
+      "imgSrc": "/Products/ringhead.jpg"
+    },
+    {
+      "key": "ear",
+      "name": "Earrings",
+      "imgSrc": "/Products/earheader.jpg"
+    },
+    {
+      "key": "bracelet",
+      "name": "Bracelets",
+      "imgSrc": "/Products/bracletheader.jpg"
+    },
+    {
+      "key": "necklace",
+      "name": "Necklaces",
+      "imgSrc": "/Products/neckhead.jpg"
+    }
+  ],
+  "products": [
     {
       "id": "2",
       "name": "Dog Charm",
