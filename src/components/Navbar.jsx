@@ -2,8 +2,12 @@ import React, { useContext } from 'react';
 import logo from '../assets/logo.png';
 import { NavLink } from 'react-router-dom';
 import { AuthContext } from '../Context/AuthContext';
+import { CartContext } from '../Context/CarContext.jsx';
 export default function Navbar() {
     let { isLogin, logout } = useContext(AuthContext);
+
+    const { cartItems } = useContext(CartContext);
+    const totalQuantity = cartItems.reduce((total, item) => total + item.quantity, 0);
 
     return (
         <nav className="navbar navbar-expand-lg py-5 fixed-top">
@@ -50,11 +54,12 @@ export default function Navbar() {
                                 0
                             </span>
                         </i>
-                       <NavLink to='/cart'> <i className="fa-solid fa-bag-shopping position-relative fa-lg">
+                        <NavLink to='/cart'>
+                          <i className="fa-solid fa-bag-shopping position-relative fa-lg">
                             <span className="position-absolute top-0 translate-middle badge rounded-circle main-bg mx-1 p-1">
-                                0
+                                {totalQuantity}
                             </span>
-                        </i>
+                          </i>
                         </NavLink>
                     </div>
                 </div>

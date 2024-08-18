@@ -11,6 +11,7 @@ import Login from './components/Login';
 import Register from './components/Register';
 import ProductDeatail from './components/ProductDeatail';
 import Cart from './components/Cart';
+import { CartProvider } from './Context/CarContext';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -48,7 +49,9 @@ function App() {
   ]);
 
   return (
-    <RouterProvider router={routes} />
+    <CartProvider> 
+      <RouterProvider router={routes} />
+    </CartProvider>
   );
 }
 
