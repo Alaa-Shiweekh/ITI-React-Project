@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 export default function Shop() {
   const [products, setProducts] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState('');
+  const [title, setTitle] = useState('Shop');
 
   useEffect(() => {
     axios.get('http://localhost:3000/product')
@@ -18,8 +19,9 @@ export default function Shop() {
       .catch(err => console.log(err));
   }, []);
 
-  const handleCategoryClick = (categoryKey) => {
+  const handleCategoryClick = (categoryKey, categoryName) => {
     setSelectedCategory(categoryKey);
+    setTitle(categoryName);
   };
 
   const countItemsInCategory = (categoryKey) => {
@@ -27,10 +29,10 @@ export default function Shop() {
   };
 
   const categories = [
-    { name: 'Rings', key: 'ring' },
-    { name: 'Earrings', key: 'ear' },
-    { name: 'Bracelets', key: 'bracelet' },
-    { name: 'Necklaces', key: 'necklace' }
+    { name: 'Rings', key: 'ring', imgSrc: '/Products/ringhead.jpg' },
+    { name: 'Earrings', key: 'ear', imgSrc: '/Products/earheader.jpg' },
+    { name: 'Bracelets', key: 'bracelet', imgSrc: '/Products/bracletheader.jpg' },
+    { name: 'Necklaces', key: 'necklace', imgSrc: '/Products/neckhead.jpg' }
   ];
 
   const filteredProducts = selectedCategory
@@ -40,9 +42,31 @@ export default function Shop() {
   return (
     <>
       <section>
-        <div className="header-cat d-flex justify-content-center align-items-center text-center">
-          <div className="title">
-            <h3 className='text-white' style={{ fontFamily: "cursive" }}>Shop</h3>
+        <div className="header-cat" style={{ position: 'relative' }}>
+          <div style={{
+            background: 'url(/products/header-background.jpg) no-repeat center center',
+            backgroundSize: 'cover',
+            padding: '100px 0',
+            textAlign: 'center',
+          }}>
+            <h3 className='text-white' style={{
+              fontFamily: 'Cursive, cursive',
+              fontSize: '2.5rem',
+              marginBottom: '20px',
+              textAlign: 'center'
+            }}>
+              {title}
+            </h3>
+            <div className="category-images d-flex justify-content-center mt-4" style={{ marginTop: '20px' }}>
+              {categories.map(category => (
+                <div key={category.key} className="category-item mx-2" style={{ textAlign: 'center' }}>
+                  <Link to="#" onClick={() => handleCategoryClick(category.key, category.name)} style={{ textDecoration: 'none', color: 'inherit' }}>
+                    <img src={category.imgSrc} alt={category.name} className="img-fluid rounded-circle" style={{ width: '120px', height: '120px', objectFit: 'cover' }} />
+                    <p className='text-white' style={{ marginTop: '10px', fontFamily: 'Cursive, cursive' }}>{category.name}</p>
+                  </Link>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
         <div className="container my-5">
@@ -51,7 +75,7 @@ export default function Shop() {
               <h4>Categories</h4>
               <ul>
                 {categories.map(category => (
-                  <li key={category.key} onClick={() => handleCategoryClick(category.key)}>
+                  <li key={category.key} onClick={() => handleCategoryClick(category.key, category.name)}>
                     {category.name} ({countItemsInCategory(category.key)})
                   </li>
                 ))}
