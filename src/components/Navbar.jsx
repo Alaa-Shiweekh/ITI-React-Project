@@ -25,6 +25,9 @@ export default function Navbar() {
                             <li className="nav-item nav-active">
                                 <NavLink to={'/shop'} className='text-decoration-none text-black'>Shop</NavLink>
                             </li>
+                            <li className="nav-item nav-active">
+                                <NavLink to={'/dashboard'} className='text-decoration-none text-black'>Dashboard</NavLink>
+                            </li>
 
                             <li className="nav-item dropdown nav-hover">
                                 <NavLink className="dropdown-toggle text-decoration-none text-black page" role="button" data-bs-toggle="dropdown" aria-expanded="false">
