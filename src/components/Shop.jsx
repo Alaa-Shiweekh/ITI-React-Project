@@ -4,14 +4,25 @@ import { Link } from 'react-router-dom';
 
 export default function Shop() {
   const [products, setProducts] = useState([]);
+  const [categories, setCategories] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState('');
   const [title, setTitle] = useState('Shop');
 
   useEffect(() => {
-    axios.get('http://localhost:3000/product')
+    axios.get('http://localhost:3000/products')
       .then(res => {
         if (res.data && Array.isArray(res.data)) {
           setProducts(res.data);
+        } else {
+          console.error('Unexpected data structure:', res.data);
+        }
+      })
+      .catch(err => console.log(err));
+
+    axios.get('http://localhost:3000/categories')
+      .then(res => {
+        if (res.data && Array.isArray(res.data)) {
+          setCategories(res.data);
         } else {
           console.error('Unexpected data structure:', res.data);
         }
@@ -27,13 +38,6 @@ export default function Shop() {
   const countItemsInCategory = (categoryKey) => {
     return products.filter(product => product.category === categoryKey).length;
   };
-
-  const categories = [
-    { name: 'Rings', key: 'ring', imgSrc: '/Products/ringhead.jpg' },
-    { name: 'Earrings', key: 'ear', imgSrc: '/Products/earheader.jpg' },
-    { name: 'Bracelets', key: 'bracelet', imgSrc: '/Products/bracletheader.jpg' },
-    { name: 'Necklaces', key: 'necklace', imgSrc: '/Products/neckhead.jpg' }
-  ];
 
   const filteredProducts = selectedCategory
     ? products.filter(product => product.category === selectedCategory)
