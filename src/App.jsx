@@ -11,11 +11,9 @@ import Login from './components/Login';
 import Register from './components/Register';
 import ProductDeatail from './components/ProductDeatail';
 import Cart from './components/Cart';
-<<<<<<< Updated upstream
 import { CartProvider } from './Context/CarContext';
-=======
 import Dashboard from './components/Dashboard';
->>>>>>> Stashed changes
+
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -54,7 +52,7 @@ function App() {
   ]);
 
   return (
-    <CartProvider> 
+    <CartProvider>
       <RouterProvider router={routes} />
     </CartProvider>
   );
