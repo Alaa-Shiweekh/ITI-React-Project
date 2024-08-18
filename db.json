@@ -1,194 +1,218 @@
 {
-    "product": [
-        {
-            "id": "1",
-            "name": "Chicago Hoops",
-            "price": 40.00,
-            "image": "/Products/earing1.jpg",
-            "imagehover": "/Products/earing1hover.jpg",
-            "hot": true
-        },
-        {
-            "id": "2",
-            "name": "Dog Charm",
-            "price": 200.00,
-            "image": "/Products/earing2.jpg",
-            "imagehover": "/Products/earing2hover.jpg"
-        },
-        {
-            "id": "3",
-            "name": "Gold Bold Mini Hoops",
-            "price": [
-                25.00,
-                30.00
-            ],
-            "discount": 17,
-            "image": "/Products/earing3.jpg",
-            "imagehover": "/Products/earing3hover.jpg",
-            "hot": true
-        },
-        {
-            "id": "4",
-            "name": "Gold Core Bangle",
-            "price": [
-                40.00,
-                88.00
-            ],
-            "image": "/Products/braclet1.jpg",
-            "imagehover": "/Products/braclet1hover.jpg"
-        },
-        {
-            "id": "5",
-            "name": "Green Aventurine Moon Ring",
-            "price": 200.00,
-            "image": "/Products/ring1.jpg",
-            "imagehover": "/Products/ring1hover.jpg"
-        },
-        {
-            "id": "6",
-            "name": "La Perla Hoops",
-            "price": [
-                70.00,
-                90.00
-            ],
-            "image": "/Products/earing4.jpg",
-            "imagehover": "/Products/earing4hover.jpg"
-        },
-        {
-            "id": "7",
-            "name": "LABRADORITE MOON RING",
-            "price": 40.00,
-            "image": "/Products/ring2.jpg",
-            "imagehover": "/Products/ring2hover.jpg"
-        },
-        {
-            "id": "8",
-            "name": "LARGE SUGAR EARINGS",
-            "price": 90.00,
-            "image": "/Products/earing5.jpg",
-            "imagehover": "/Products/earing5hover.jpg"
-        },
-        {
-            "id": "9",
-            "name": "LAURA BRACELET",
-            "price": 120.00,
-            "image": "/Products/braclet2.jpg",
-            "imagehover": "/Products/braclet2hover.jpg"
-        },
-        {
-            "id": "10",
-            "name": "LINDA NECKLACE",
-            "price": 110.00,
-            "image": "/Products/nec1.jpg",
-            "imagehover": "/Products/nec1hover.jpg"
-        },
-        {
-            "id": "11",
-            "name": "MINI MAGMA HOOPS",
-            "price": 250.00,
-            "image": "/Products/earing6.jpg",
-            "imagehover": "/Products/earing6hover.jpg"
-        },
-        {
-            "id": "12",
-            "name": "NUMBER 1 CHARM",
-            "price": 65.00,
-            "image": "/Products/numbers.jpg",
-            "imagehover": "/Products/numbershover.jpg"
-        },
-        {
-            "id": "13",
-            "name": "OASIS NECKLACE",
-            "price": 125.00,
-            "image": "/Products/nec2.jpg",
-            "imagehover": "/Products/nec2hover.jpg"
-        },
-        {
-            "id": "14",
-            "name": "ONDA RING SET",
-            "price": 116.00,
-            "image": "/Products/ring3.jpg",
-            "imagehover": "/Products/ring3hover.jpg"
-        },
-        {
-            "id": "15",
-            "name": "OVAL MINI STAMP RING",
-            "price": 115.00,
-            "image": "/Products/ring4.jpg",
-            "imagehover": "/Products/ring4hover.jpg"
-        },
-        {
-            "id": "16",
-            "name": "SAIA BRACELET",
-            "price": 80.00,
-            "image": "/Products/braclet3.jpg",
-            "imagehover": "/Products/braclet3hover.jpg"
-        },
-        {
-            "id": "17",
-            "name": "SAND SOLITARY NECKLACE",
-            "price": 25.00,
-            "image": "/Products/nec3.jpg",
-            "imagehover": "/Products/nec3hover.jpg"
-        },
-        {
-            "id": "18",
-            "name": "SNAKE NECKLACE",
-            "price": 100.00,
-            "image": "/Products/nec4.jpg",
-            "imagehover": "/Products/nec4hover.jpg"
-        },
-        {
-            "id": "19",
-            "name": "SPICE NECKLACE",
-            "price": 200.00,
-            "image": "/Products/nec5.jpg",
-            "imagehover": "/Products/nec5hover.jpg"
-        },
-        {
-            "id": "19",
-            "name": "SUGAR RING SET",
-            "price": 40.00,
-            "image": "/Products/ring5.jpg",
-            "imagehover": "/Products/ring5hover.jpg"
-        },
-        {
-            "id": "20",
-            "name": "TEXAS HOOPS",
-            "price": 120.00,
-            "image": "/Products/earing7.jpg",
-            "imagehover": "/Products/earing7hover.jpg"
-        },
-        {
-            "id": "21",
-            "name": "WATER BRACELET",
-            "price": 20.00,
-            "image": "/Products/braclet4.jpg",
-            "imagehover": "/Products/braclet4hover.jpg"
-        },
-        {
-            "id": "22",
-            "name": "WATER NECKLACE",
-            "price": 60.00,
-            "image": "/Products/braclet5.jpg",
-            "imagehover": "/Products/braclet5hover.jpg"
-        },
-        {
-            "id": "23",
-            "name": "ZGOLD CIRCLE SINGLE HOOP",
-            "price": 180.00,
-            "image": "/Products/earing8.jpg",
-            "imagehover": "/Products/earing8hover.jpg"
-        }
-    ],
-    "users": [
-        {
-            "id": "263b",
-            "name": "Hanan",
-            "email": "hananamer312003@gmail.com",
-            "password": "Hanan123",
-            "repassword": "Hanan123",
-            "phone": "01212734139"
-        }
-    ]
+  "product": [
+      {
+          "id": "1",
+          "name": "Chicago Hoops",
+          "price": 40.00,
+          "image": "/Products/earing1.jpg",
+          "imagehover": "/Products/earing1hover.jpg",
+          "hot": true,
+          "category": "ear"
+      },
+      {
+          "id": "2",
+          "name": "Dog Charm",
+          "price": 200.00,
+          "image": "/Products/earing2.jpg",
+          "imagehover": "/Products/earing2hover.jpg",
+          "category": "ear"
+      },
+      {
+          "id": "3",
+          "name": "Gold Bold Mini Hoops",
+          "price": [
+              25.00,
+              30.00
+          ],
+          "discount": 17,
+          "image": "/Products/earing3.jpg",
+          "imagehover": "/Products/earing3hover.jpg",
+          "hot": true,
+          "category": "ear"
+      },
+      {
+          "id": "4",
+          "name": "Gold Core Bangle",
+          "price": [
+              40.00,
+              88.00
+          ],
+          "image": "/Products/braclet1.jpg",
+          "imagehover": "/Products/braclet1hover.jpg",
+          "category": "bracelet"
+      },
+      {
+          "id": "5",
+          "name": "Green Aventurine Moon Ring",
+          "price": 200.00,
+          "image": "/Products/ring1.jpg",
+          "imagehover": "/Products/ring1hover.jpg",
+          "category": "ring"
+      },
+      {
+          "id": "6",
+          "name": "La Perla Hoops",
+          "price": [
+              70.00,
+              90.00
+          ],
+          "image": "/Products/earing4.jpg",
+          "imagehover": "/Products/earing4hover.jpg",
+          "category": "ear"
+      },
+      {
+          "id": "7",
+          "name": "LABRADORITE MOON RING",
+          "price": 40.00,
+          "image": "/Products/ring2.jpg",
+          "imagehover": "/Products/ring2hover.jpg",
+          "category": "ring"
+      },
+      {
+          "id": "8",
+          "name": "LARGE SUGAR EARRINGS",
+          "price": 90.00,
+          "image": "/Products/earing5.jpg",
+          "imagehover": "/Products/earing5hover.jpg",
+          "category": "ear"
+      },
+      {
+          "id": "9",
+          "name": "LAURA BRACELET",
+          "price": 120.00,
+          "image": "/Products/braclet2.jpg",
+          "imagehover": "/Products/braclet2hover.jpg",
+          "category": "bracelet"
+      },
+      {
+          "id": "10",
+          "name": "LINDA NECKLACE",
+          "price": 110.00,
+          "image": "/Products/nec1.jpg",
+          "imagehover": "/Products/nec1hover.jpg",
+          "category": "necklace"
+      },
+      {
+          "id": "11",
+          "name": "MINI MAGMA HOOPS",
+          "price": 250.00,
+          "image": "/Products/earing6.jpg",
+          "imagehover": "/Products/earing6hover.jpg",
+          "category": "ear"
+      },
+      {
+          "id": "12",
+          "name": "NUMBER 1 CHARM",
+          "price": 65.00,
+          "image": "/Products/numbers.jpg",
+          "imagehover": "/Products/numbershover.jpg",
+          "category": "necklace"
+      },
+      {
+          "id": "13",
+          "name": "OASIS NECKLACE",
+          "price": 125.00,
+          "image": "/Products/nec2.jpg",
+          "imagehover": "/Products/nec2hover.jpg",
+          "category": "necklace"
+      },
+      {
+          "id": "14",
+          "name": "ONDA RING SET",
+          "price": 116.00,
+          "image": "/Products/ring3.jpg",
+          "imagehover": "/Products/ring3hover.jpg",
+          "category": "ring"
+      },
+      {
+          "id": "15",
+          "name": "OVAL MINI STAMP RING",
+          "price": 115.00,
+          "image": "/Products/ring4.jpg",
+          "imagehover": "/Products/ring4hover.jpg",
+          "category": "ring"
+      },
+      {
+          "id": "16",
+          "name": "SAIA BRACELET",
+          "price": 80.00,
+          "image": "/Products/braclet3.jpg",
+          "imagehover": "/Products/braclet3hover.jpg",
+          "category": "bracelet"
+      },
+      {
+          "id": "17",
+          "name": "SAND SOLITARY NECKLACE",
+          "price": 25.00,
+          "image": "/Products/nec3.jpg",
+          "imagehover": "/Products/nec3hover.jpg",
+          "category": "necklace"
+      },
+      {
+          "id": "18",
+          "name": "SNAKE NECKLACE",
+          "price": 100.00,
+          "image": "/Products/nec4.jpg",
+          "imagehover": "/Products/nec4hover.jpg",
+          "category": "necklace"
+      },
+      {
+          "id": "19",
+          "name": "SPICE NECKLACE",
+          "price": 200.00,
+          "image": "/Products/nec5.jpg",
+          "imagehover": "/Products/nec5hover.jpg",
+          "category": "necklace"
+      },
+      {
+          "id": "20",
+          "name": "SUGAR RING SET",
+          "price": 40.00,
+          "image": "/Products/ring5.jpg",
+          "imagehover": "/Products/ring5hover.jpg",
+          "category": "ring"
+      },
+      {
+          "id": "21",
+          "name": "TEXAS HOOPS",
+          "price": 120.00,
+          "image": "/Products/earing7.jpg",
+          "imagehover": "/Products/earing7hover.jpg",
+          "category": "ear"
+      },
+      {
+          "id": "22",
+          "name": "WATER BRACELET",
+          "price": 20.00,
+          "image": "/Products/braclet4.jpg",
+          "imagehover": "/Products/braclet4hover.jpg",
+          "category": "bracelet"
+      },
+      {
+          "id": "23",
+          "name": "WATER NECKLACE",
+          "price": 60.00,
+          "image": "/Products/nec6.jpg",
+          "imagehover": "/Products/nec6hover.jpg",
+          "category": "necklace"
+      },
+      {
+          "id": "24",
+          "name": "ZGOLD CIRCLE SINGLE HOOP",
+          "price": 180.00,
+          "image": "/Products/earing8.jpg",
+          "imagehover": "/Products/earing8hover.jpg",
+          "category": "ear"
+      }
+  ],
+  "users": [
+      {
+          "id": "263b",
+          "name": "Hanan",
+          "email": "hananamer312003@gmail.com",
+          "password": "Hanan123",
+          "repassword": "Hanan123",
+          "phone": "01212734139"
+      }
+  ]
 }
