@@ -62,7 +62,7 @@ export default function Cart() {
       </div>
       <h4 className="mt-4">Total: ${total.toFixed(2)}</h4>
       <button className='btn btn-link pro' onClick={() => navigate('/shop')}>Back To Shop</button>
-      <button className='btn btn-link pro'>Proceed To Checkout</button>
+      <button className='btn btn-link pro' onClick={() => navigate('/confirmpay')}>Proceed To Checkout</button>
 
     </div>
   );

@@ -13,6 +13,7 @@
     "@fortawesome/fontawesome-free": "^6.6.0",
     "axios": "^1.7.4",
     "bootstrap": "^5.3.3",
+    "emailjs-com": "^3.2.0",
     "flowbite": "^2.5.1",
     "formik": "^2.4.6",
     "json": "^11.0.0",

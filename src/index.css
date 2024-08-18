@@ -290,3 +290,23 @@ p {
 .proImg {
   margin-right: 5px;
 }
+
+/*Confirm Page*/
+.confirm{
+  margin-top: 148px;
+}
+.field{
+  background-color: transparent;
+  background-color: transparent transparent #333 transparent;
+}
+.lbl{
+  margin-bottom: 12px;
+ }
+
+.rec{
+  padding: 40px 20px;
+ 
+} 
+.order{
+  margin-bottom: 20px;
+}

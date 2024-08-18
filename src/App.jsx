@@ -15,6 +15,8 @@ import { CartProvider } from './Context/CarContext';
 import Dashboard from './components/Dashboard';
 import Addproduct from './components/Addproduct';
 import Edit from './components/Edit';
+import ConfirmPay from './components/Confirmpay.jsx'; 
+
 
 
 function App() {
@@ -47,10 +49,15 @@ function App() {
         { path: 'login', element: <Login onLoginSuccess={handleLoginSuccess} /> },
         { path: 'register', element: <Register onRegisterSuccess={handleRegisterSuccess} /> },
         {
-          path: 'buy',
-          element: isRegistered ? (isLoggedIn ? <Navigate to="/purchase" /> : <Navigate to="/login" />) : <Navigate to="/register" />
-        },
-        { path: '*', element: <Notfound /> },
+          path: 'buy', 
+          element: isRegistered 
+            ? (isLoggedIn 
+                ? <Navigate to="/confirmpay" /> // انتقل إلى صفحة تأكيد الدفع إذا كان المستخدم مسجل الدخول
+                : <Navigate to="/login" />) 
+            : <Navigate to="/register" /> 
+          },
+          { path: 'confirmpay', element: <ConfirmPay /> },
+          { path: '*', element: <Notfound /> },
       ],
     },
   ]);
