@@ -17,6 +17,7 @@ export default function Login() {
         res.data.map(user => {
           if (user.email === values.email) {
             if (user.password === values.password) {
+              user.isAdmin = (user.email === 'admin@gmail.com' && user.password === 'admin123');
               login(user);
               navigate('/');
             } else {

@@ -13,6 +13,8 @@ import ProductDeatail from './components/ProductDeatail';
 import Cart from './components/Cart';
 import { CartProvider } from './Context/CarContext';
 import Dashboard from './components/Dashboard';
+import Addproduct from './components/Addproduct';
+import Edit from './components/Edit';
 
 
 function App() {
@@ -38,7 +40,9 @@ function App() {
         { path: 'contact', element: <Contact /> },
         { path: 'about', element: <About /> },
         { path: 'cart', element: <Cart /> },
+        { path: 'addproduct', element: <Addproduct /> },
         { path: 'dashboard', element: <Dashboard /> },
+        { path: "/edit/:id", element: <Edit /> },
         { path: 'productdetails/:id', element: <ProductDeatail /> },
         { path: 'login', element: <Login onLoginSuccess={handleLoginSuccess} /> },
         { path: 'register', element: <Register onRegisterSuccess={handleRegisterSuccess} /> },

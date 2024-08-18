@@ -5,8 +5,12 @@
     background-color: #f8f9fa;
   }
    */
+   .add{
+    margin-top: 122px;
+    background-color: white;
+   }
 .main-color{
-    color: #63512d;
+    color: #63512d !important;
 }
 .main-bg{
     background-color: #63512d;
@@ -102,23 +106,23 @@ body {
   }
   
   .btn {
-   margin-top: 50px;
-    font-size: 15px;
-    line-height: 45px;
-    fill: #000;
-    color: #000;
-    background-color: #02010100;
-    border-style: solid;
+   /* margin-top: 50px; */
+    /* font-size: 15px; */
+    /* line-height: 45px; */
+    /* fill: #000; */
+    /* color: #000; */
+    /* background-color: #02010100; */
+    /* border-style: solid; */
     border-width: 1px;
-    border-color: #000;
-    padding: 0 40px;
+    /* border-color: #000; */
+    /* padding: 0 40px; */
   }
   
-  .btn:hover {
+  /* .btn:hover {
     background-color: #65532f;
     border-color:  #65532f;
     color: white;
-  }
+  } */
 
 .textContent{
     margin: 57px;

@@ -9,14 +9,14 @@ export default function Register() {
     axios.get("http://localhost:3000/users").then((data) => {
       let user = data.data;
       console.log(data);
-      
+
       let email = user.map(users => users.email)
       console.log(email);
       if (email.includes(values.email)) {
         alert('Email already exists. Please try another one.');
       }
       else {
-
+        values.isAdmin = (values.email === 'admin@gmail.com' && values.password === 'admin123');
         axios.post("http://localhost:3000/users", values)
           .then((res) => {
             console.log(res.data);
