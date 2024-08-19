@@ -1,10 +1,4 @@
-/* body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
-  }
-   */
+/* -------------------------------------------------------------------------------------------------general  --------------------------------------------------------------------*/
 .main-color {
   color: #63512d !important;
 }
@@ -13,16 +7,27 @@
   background-color: #63512d;
 }
 
-nav {
-  background-color: white;
+i {
+  cursor: pointer;
 }
 
-.logo {
-  width: 80px;
+.btn {
+  border: black 1px solid;
+  border-radius: 0;
+
 }
 
-.dropdown:hover .dropdown-menu {
-  display: block;
+.btn:hover {
+  color: white !important;
+  background-color: #63512d;
+}
+
+/* -------------------------------------------------------------------------------------------------general end--------------------------------------------------------------------*/
+
+/* -------------------------------------------------------------------------------------------------navbar  --------------------------------------------------------------------*/
+nav,
+.banner {
+  background-color: #ece6de !important;
 }
 
 .nav-hover:hover .page {
@@ -33,27 +38,59 @@ nav {
   color: #63512d !important;
 }
 
-.user {
-  margin-top: -12px;
+.logo {
+  width: 80px;
 }
 
-i {
-  cursor: pointer;
+.dropdown:hover .dropdown-menu {
+  display: block;
 }
 
-/*About Page*/
-body {
-  /* font-family: "Playfair Display", serif; */
+/* -------------------------------------------------------------------------------------------------navbar end --------------------------------------------------------------------*/
 
-  background-color: #f8f9fa;
-  /* width: 100%; */
+/* -------------------------------------------------------------------------------------------------Home Page  --------------------------------------------------------------------*/
+.cars {
+  position: relative;
+  animation: Scale 10s;
+  animation-iteration-count: infinite;
 }
 
-/* .container {
-    margin-top: 30px;
+@keyframes Scale {
+  from {
+    transform: scale(1);
+  }
 
-  } */
+  to {
+    transform: scale(1.05);
+  }
+}
 
+.top-trending,
+.top-trend-content {
+  background-color: #534323;
+}
+
+.catimg:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px);
+  }
+
+  50% {
+    transform: translate(-1px, 2px);
+  }
+
+  100% {
+    transform: translate(1px, 1px);
+  }
+}
+
+/* -------------------------------------------------------------------------------------------------Home Page end--------------------------------------------------------------------*/
 @media (max-width:768px) {
   .col-md-3 {
     flex-direction: column;
@@ -229,7 +266,6 @@ p {
   background-size: cover;
   height: 60vh;
   width: 100%;
-  margin-top: 7rem;
 }
 
 /*cart */
@@ -292,21 +328,24 @@ p {
 }
 
 /*Confirm Page*/
-.confirm{
+.confirm {
   margin-top: 148px;
 }
-.field{
+
+.field {
   background-color: transparent;
   background-color: transparent transparent #333 transparent;
 }
-.lbl{
-  margin-bottom: 12px;
- }
 
-.rec{
+.lbl {
+  margin-bottom: 12px;
+}
+
+.rec {
   padding: 40px 20px;
- 
-} 
-.order{
+
+}
+
+.order {
   margin-bottom: 20px;
 }

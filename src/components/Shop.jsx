@@ -89,7 +89,7 @@ export default function Shop() {
               <div className="row d-flex">
                 {filteredProducts.length > 0 ? (
                   filteredProducts.map((product) => (
-                    <div key={product.id} className="col-md-4 my-2 bg-transparent">
+                    <div className="col-md-4 my-2 bg-transparent">
                       <Link to={`/productdetails/${product.id}`}>
                         <div className="img">
                           <img src={product.image} className="w-100" alt={product.name} />

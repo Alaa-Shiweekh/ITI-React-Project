@@ -4,24 +4,28 @@
       "key": "ring",
       "name": "Ring",
       "imgSrc": "/Products/ringhead.jpg",
+      "img": "/Products/ringicon.png",
       "id": "91fc"
     },
     {
       "key": "ear",
       "name": "Earrings",
       "imgSrc": "/Products/earheader.jpg",
+      "img": "/Products/earingicon.png",
       "id": "257a"
     },
     {
       "key": "bracelet",
       "name": "Bracelets",
       "imgSrc": "/Products/bracletheader.jpg",
+      "img": "/Products/braceleticon.png",
       "id": "8fe3"
     },
     {
       "key": "necklace",
       "name": "Necklaces",
       "imgSrc": "/Products/neckhead.jpg",
+      "img": "/Products/necicon.png",
       "id": "914c"
     }
   ],

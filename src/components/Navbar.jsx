@@ -6,12 +6,10 @@ import { CartContext } from '../Context/CarContext.jsx';
 
 export default function Navbar() {
     let { isLogin, logout } = useContext(AuthContext);
-
     let { cartItems } = useContext(CartContext);
     let totalQuantity = cartItems.reduce((total, item) => total + item.quantity, 0);
-
     return (
-        <nav className="navbar navbar-expand-lg py-5 fixed-top">
+        <nav className="navbar navbar-expand-lg p-4 ">
             <div className="container">
                 <img src={logo} className='logo' />
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,7 +53,7 @@ export default function Navbar() {
                                 0
                             </span>
                         </i>
-                        <NavLink to='/cart'>
+                        <NavLink to='/cart' className='text-black'>
                             <i className="fa-solid fa-bag-shopping position-relative fa-lg">
                                 <span className="position-absolute top-0 translate-middle badge rounded-circle main-bg mx-1 p-1">
                                     {totalQuantity}

@@ -3,7 +3,7 @@ import React from 'react'
 export default function Footer() {
   return (
   <>
-    <footer>
+    <footer className='bg-black text-white p-5'>
       <section >
         <div className="container text-center text-md-start mt-5">
           <div className="row mt-3">
@@ -74,7 +74,7 @@ export default function Footer() {
         </div>
       </section>
         <div className="container">
-      <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <section className="d-flex justify-content-center justify-content-lg-between p-4 border-top">
         <div className="me-5 d-none d-lg-block">
           <span>Copyright © 2024. All Right Reserved</span>
         </div>

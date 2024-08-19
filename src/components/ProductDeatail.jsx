@@ -5,7 +5,7 @@ import { CartContext } from '../Context/CarContext.jsx';
 
 export async function productDeatils(id) {
   try {
-    let response = await axios.get(`http://localhost:3000/product/${id}`);
+    let response = await axios.get(`http://localhost:3000/products/${id}`);
     let products = Array.isArray(response.data) ? response.data : [response.data];
     return products;
   } catch (err) {
