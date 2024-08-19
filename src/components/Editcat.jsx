@@ -7,12 +7,12 @@ export default function Edit() {
 
     let navigate = useNavigate();
 
-    let [inputprod, setInputprod] = useState([]);
+    let [inputcat, setInputcat] = useState([]);
 
     useEffect(() => {
-        axios.get(`http://localhost:3000/products/${id}`)
+        axios.get(`http://localhost:3000/categories/${id}`)
             .then(res => {
-                setInputprod(res.data);
+                setInputcat(res.data);
             })
             .catch(err => {
                 console.error(err);
@@ -21,7 +21,7 @@ export default function Edit() {
 
     function handleSubmit(e) {
         e.preventDefault();
-        axios.put(`http://localhost:3000/products/${id}`, inputprod)
+        axios.put(`http://localhost:3000/categories/${id}`, inputcat)
             .then(res => {
                 navigate('/dashboard');
             }
@@ -35,12 +35,12 @@ export default function Edit() {
         <div className='d-flex w-100 vh-100 justify-content-center align-items-center'>
             <form onSubmit={handleSubmit}>
                 <div className="mb-3">
-                    <label className="form-label">Product Name</label>
-                    <input type="text" className="form-control" value={inputprod.name} onChange={e => setInputprod({ ...inputprod, name: e.target.value })} />
+                    <label className="form-label">Category Name</label>
+                    <input type="text" className="form-control" value={inputcat.name} onChange={e => setInputcat({ ...inputcat, name: e.target.value })} />
                 </div>
                 <div className="mb-3">
-                    <label className="form-label">Price</label>
-                    <input type="number" className="form-control" value={inputprod.price} onChange={e => setInputprod({ ...inputprod, price: e.target.value })} />
+                    <label className="form-label">Key</label>
+                    <input type="text" className="form-control" value={inputcat.key} onChange={e => setInputcat({ ...inputcat, key: e.target.value })} />
                 </div>
                 <button type="submit" className="btn btn-primary">Submit</button>
             </form>

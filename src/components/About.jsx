@@ -2,11 +2,9 @@ import React from 'react';
 import about1 from '../assets/about1.jpg';
 import about2 from '../assets/about2.jpg';
 import about3 from '../assets/about3.jpg';
-
 import image1 from '/src/assets/test.jpg';
 import image2 from '/src/assets/test-2.jpg';
 import image3 from '/src/assets/test-3.jpg';
-
 import card1 from '/src/assets/ins.jpg';
 import card2 from '/src/assets/ins-2.jpg';
 import card3 from '/src/assets/ins-3.jpg';

@@ -2,42 +2,36 @@
   "categories": [
     {
       "key": "ring",
-      "name": "Rings",
-      "imgSrc": "/Products/ringhead.jpg"
+      "name": "Ring",
+      "imgSrc": "/Products/ringhead.jpg",
+      "id": "91fc"
     },
     {
       "key": "ear",
       "name": "Earrings",
-      "imgSrc": "/Products/earheader.jpg"
+      "imgSrc": "/Products/earheader.jpg",
+      "id": "257a"
     },
     {
       "key": "bracelet",
       "name": "Bracelets",
-      "imgSrc": "/Products/bracletheader.jpg"
+      "imgSrc": "/Products/bracletheader.jpg",
+      "id": "8fe3"
     },
     {
       "key": "necklace",
       "name": "Necklaces",
-      "imgSrc": "/Products/neckhead.jpg"
+      "imgSrc": "/Products/neckhead.jpg",
+      "id": "914c"
     }
   ],
   "products": [
     {
       "id": "2",
       "name": "Dog Charm",
-      "price": "100",
+      "price": 200,
       "image": "/Products/earing2.jpg",
       "imagehover": "/Products/earing2hover.jpg",
-      "category": "ear"
-    },
-    {
-      "id": "3",
-      "name": "Gold Bold Mini Hoops",
-      "price": 25,
-      "discount": 17,
-      "image": "/Products/earing3.jpg",
-      "imagehover": "/Products/earing3hover.jpg",
-      "hot": true,
       "category": "ear"
     },
     {
@@ -191,14 +185,6 @@
       "image": "/Products/braclet4.jpg",
       "imagehover": "/Products/braclet4hover.jpg",
       "category": "bracelet"
-    },
-    {
-      "id": "23",
-      "name": "WATER NECKLACE",
-      "price": 60,
-      "image": "/Products/nec6.jpg",
-      "imagehover": "/Products/nec6hover.jpg",
-      "category": "necklace"
     }
   ],
   "users": [

@@ -7,7 +7,6 @@ import img from '../assets/ContactImg.jpg';
 export default function Contact() {
   return (
     <div className="container mt-5">
-      {/* الصورة مع الكلمة Contact */}
       <div className="position-relative">
         <img src={img} alt="Contact" className="img-fluid w-100" />
         <div className="position-absolute text-light" style={{ bottom: '0', right: '0', transform: 'translate(0%, 0%)' }}>
@@ -35,47 +34,47 @@ export default function Contact() {
 
       {/* نموذج التواصل */}
       <div className="container contact-page">
-      <div className="row">
-        <div className="col-md-8">
-          <h2>Contact Details</h2>
-          <form>
-            <div className="form-group">
-              <label htmlFor="name">Name</label>
-              <input type="text" className="form-control" id="name" placeholder="Name" required />
-            </div>
-            <div className="form-group">
-              <label htmlFor="email">Email Address</label>
-              <input type="email" className="form-control" id="email" placeholder="Email Address" required />
-            </div>
-            <div className="form-group">
-              <label htmlFor="phone">Number Phone</label>
-              <input type="text" className="form-control" id="phone" placeholder="Number Phone" required />
-            </div>
-            <div className="form-group">
-              <label htmlFor="message">Comment Or Message</label>
-              <textarea className="form-control" id="message" rows="5" required></textarea>
-            </div>
-            <button type="submit"    className="botton">Send Message</button>
-          </form>
-        </div>
-        <div className="col-md-4">
-          
-          <div className="contact-info">
-          <h2>Get In Touch</h2>
-            <p><strong>Address</strong> Rains HQ, Jens Olsens Vej 13, 8200 Aarhus N, Denmark</p>
-            <p><strong>Phone</strong> (+84) 123 567 712</p>
-            <p><strong>Email</strong> jewelryshop@gmail.com</p>
-            <p><strong>Follow Us</strong></p>
-            <div className="social-icons">
-              <i className="fab fa-tiktok"></i>
-              <i className="fab fa-twitter"></i>
-              <i className="fab fa-instagram"></i>
-              <i className="fab fa-facebook"></i>
+        <div className="row">
+          <div className="col-md-8">
+            <h2>Contact Details</h2>
+            <form>
+              <div className="form-group">
+                <label htmlFor="name">Name</label>
+                <input type="text" className="form-control" id="name" placeholder="Name" required />
+              </div>
+              <div className="form-group">
+                <label htmlFor="email">Email Address</label>
+                <input type="email" className="form-control" id="email" placeholder="Email Address" required />
+              </div>
+              <div className="form-group">
+                <label htmlFor="phone">Number Phone</label>
+                <input type="text" className="form-control" id="phone" placeholder="Number Phone" required />
+              </div>
+              <div className="form-group">
+                <label htmlFor="message">Comment Or Message</label>
+                <textarea className="form-control" id="message" rows="5" required></textarea>
+              </div>
+              <button type="submit" className="botton">Send Message</button>
+            </form>
+          </div>
+          <div className="col-md-4">
+
+            <div className="contact-info">
+              <h2>Get In Touch</h2>
+              <p><strong>Address</strong> Rains HQ, Jens Olsens Vej 13, 8200 Aarhus N, Denmark</p>
+              <p><strong>Phone</strong> (+84) 123 567 712</p>
+              <p><strong>Email</strong> jewelryshop@gmail.com</p>
+              <p><strong>Follow Us</strong></p>
+              <div className="social-icons">
+                <i className="fab fa-tiktok"></i>
+                <i className="fab fa-twitter"></i>
+                <i className="fab fa-instagram"></i>
+                <i className="fab fa-facebook"></i>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
       {/* Newsletter Signup */}
       <div className="sletter p-5 mt-5 text-center">
@@ -95,11 +94,11 @@ export default function Contact() {
         </form>
       </div>
     </div>
-  
-    
-    
-    
-    
-    
+
+
+
+
+
+
   );
 }

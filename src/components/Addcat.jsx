@@ -3,16 +3,16 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 export default function Addproduct() {
-    let [inputprod, setInputprod] = useState({ name: "", price: 0 })
+    let [inputcat, setInputcat] = useState({ name: "", key: "" })
     let navigate = useNavigate()
     function handelsubmit(e) {
         e.preventDefault()
-        axios.post("http://localhost:3000/products", inputprod)
+        axios.post("http://localhost:3000/categories", inputcat)
             .then(res => {
-                setInputprod(res.data);
+                setInputcat(res.data);
                 navigate("/dashboard")
             }).catch(error => {
-                console.error('Error fetching products:', error);
+                console.error('Error fetching categories:', error);
             });
     }
     return (
@@ -20,11 +20,11 @@ export default function Addproduct() {
             <form onSubmit={handelsubmit}>
                 <div className="mb-3">
                     <label className="form-label">Product Name</label>
-                    <input type="text" className="form-control" onChange={e => setInputprod({ ...inputprod, name: e.target.value })} />
+                    <input type="text" className="form-control" onChange={e => setInputcat({ ...inputprod, name: e.target.value })} />
                 </div>
                 <div className="mb-3">
                     <label className="form-label">Price</label>
-                    <input type="number" className="form-control" onChange={e => setInputprod({ ...inputprod, price: e.target.value })} />
+                    <input type="number" className="form-control" onChange={e => setInputcat({ ...inputprod, price: e.target.value })} />
                 </div>
                 <button type="submit" className="btn btn-primary">Submit</button>
             </form>
