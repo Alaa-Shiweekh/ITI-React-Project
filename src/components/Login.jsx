@@ -1,6 +1,4 @@
 import React, { useContext } from 'react';
-import './Login.css';
-import sign from '../assets/sign.jpg';
 import { useFormik } from 'formik';
 import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
@@ -57,43 +55,49 @@ export default function Login() {
   });
 
   return (
-    <div className="login-wrapper">
-      <div className="login-container">
-        <button className="close-btn" onClick={() => window.history.back()}>✕</button>
-        <div className="login-header">
-          <img src={sign} alt="Login Banner" />
-          <span>Create An Account</span>
+    <div className="login ">
+      <div className="container w-50  py-5">
+        <div className="bg-white hight">
+          <div className="header p-5  position-relative mx-auto">
+            <button className="close-btn position-absolute end-0 rounded-circle border-0 top-0" onClick={() => window.history.back()}>✕</button>
+            <p className=' position-absolute bottom-0'>Sign In</p>
+          </div>
+
+          <form onSubmit={formik.handleSubmit} className=' mt-3'>
+            <div className="form-group">
+              <input
+                type="email"
+                placeholder="Email*"
+                id='email'
+                className='form-control'
+                value={formik.values.email}
+                onChange={formik.handleChange}
+              />
+              {formik.errors.email && formik.touched.email ?
+                <div className="text-sm text-danger rounded-lg bg-body-tertiary p-4 text-center" role="alert">
+                  <span className="font-medium text-center">{formik.errors.email}</span>
+                </div> : ''}
+            </div>
+            <div className="form-group ">
+              <input
+                type="password"
+                placeholder="Password*"
+                id='password'
+                className='form-control'
+                value={formik.values.password}
+                onChange={formik.handleChange}
+              />
+              {formik.errors.password && formik.touched.password ?
+                <div className="text-sm text-danger rounded-lg bg-body-tertiary p-4 text-center" role="alert">
+                  <span className="font-medium text-center">{formik.errors.password}</span>
+                </div> : ''}
+            </div>
+            <div className="d-flex justify-content-center align-items-center flex-column gap-2 my-5">
+              <button type="submit" className="btn bg-black text-white px-5 py-2">Sign In</button>
+              <button type="submit" className="btn  px-2 py-2"><Link to='/register' className=" text-dark text-decoration-none">Create An Account</Link></button>
+            </div>
+          </form>
         </div>
-        <form onSubmit={formik.handleSubmit}>
-          <div className="form-group">
-            <input
-              type="email"
-              placeholder="Email*"
-              id='email'
-              value={formik.values.email}
-              onChange={formik.handleChange}
-            />
-            {formik.errors.email && formik.touched.email ?
-              <div className="text-sm text-danger rounded-lg bg-body-tertiary p-4 text-center" role="alert">
-                <span className="font-medium text-center">{formik.errors.email}</span>
-              </div> : ''}
-          </div>
-          <div className="form-group">
-            <input
-              type="password"
-              placeholder="Password*"
-              id='password'
-              value={formik.values.password}
-              onChange={formik.handleChange}
-            />
-            {formik.errors.password && formik.touched.password ?
-              <div className="text-sm text-danger rounded-lg bg-body-tertiary p-4 text-center" role="alert">
-                <span className="font-medium text-center">{formik.errors.password}</span>
-              </div> : ''}
-          </div>
-          <button type="submit" className="Login-btn">Login</button>
-        </form>
-        <p className='text-center'>Don`t Have Account?<Link to='/register' className=" text-dark">Register</Link></p>
       </div>
     </div>
   );

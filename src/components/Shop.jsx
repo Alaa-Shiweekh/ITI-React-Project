@@ -76,10 +76,10 @@ export default function Shop() {
         <div className="container my-5">
           <div className="row">
             <div className="col-md-3">
-              <h4>Categories</h4>
-              <ul>
+              <h4 style={{ fontFamily: "cursive" }}>Categories</h4>
+              <ul className=' list-unstyled'>
                 {categories.map(category => (
-                  <li key={category.key} onClick={() => handleCategoryClick(category.key, category.name)}>
+                  <li className='text-muted mt-4' key={category.key} onClick={() => handleCategoryClick(category.key, category.name)}>
                     {category.name} ({countItemsInCategory(category.key)})
                   </li>
                 ))}
@@ -90,13 +90,16 @@ export default function Shop() {
                 {filteredProducts.length > 0 ? (
                   filteredProducts.map((product) => (
                     <div className="col-md-4 my-2 bg-transparent">
-                      <Link to={`/productdetails/${product.id}`}>
                         <div className="img">
                           <img src={product.image} className="w-100" alt={product.name} />
                         </div>
                         <p>{product.name}</p>
-                        <p>${Array.isArray(product.price) ? product.price[0] : product.price}</p>
+                        <p>{product.price}.00<span className=' text-success'>$</span></p>
+                        <p className=' text-secondary'>{product.description.slice(0, 50)}</p>
+                      <Link to={`/productdetails/${product.id}`} className=' text-decoration-none text-black'>
+                        <p>Read More <i class="fa-solid fa-arrow-right"></i></p>
                       </Link>
+
                     </div>
                   ))
                 ) : (

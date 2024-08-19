@@ -1,6 +1,5 @@
 import React from 'react';
-import './Login.css';
-import sign from '../assets/sign.jpg';
+import { Link } from 'react-router-dom';
 import { useFormik } from 'formik';
 import axios from 'axios';
 
@@ -65,89 +64,96 @@ export default function Register() {
   });
 
   return (
-    <div className="login-wrapper">
-      <div className="login-container">
-        <button className="close-btn" onClick={() => window.history.back()}>✕</button>
-        <div className="login-header">
-          <img src={sign} alt="Register Banner" />
-          <span>Create An Account</span>
+    <div className="login">
+      <div className="container w-50 py-5">
+        <div className="bg-white height">
+          <div className="header p-5  position-relative mx-auto">
+            <button className="close-btn position-absolute end-0 rounded-circle border-0 top-0" onClick={() => window.history.back()}>✕</button>
+            <p className=' position-absolute bottom-0'>Create An Account</p>
+          </div>
+          <form onSubmit={formik.handleSubmit} className=' mt-3'>
+            <div className="form-group">
+              <input
+                onBlur={formik.handleBlur}
+                type="text"
+                placeholder="Username*"
+                id='name'
+                className='form-control'
+                value={formik.values.name}
+                onChange={formik.handleChange}
+              />
+              {formik.errors.name && formik.touched.name ?
+                <div className="text-sm text-danger rounded-lg bg-body-tertiary p-4 text-center" role="alert">
+                  <span className="font-medium text-center">{formik.errors.name}</span>
+                </div> : ''}
+            </div>
+
+            <div className="form-group">
+              <input
+                className='form-control'
+                type="email"
+                placeholder="Email*"
+                id='email'
+                value={formik.values.email}
+                onChange={formik.handleChange}
+              />
+              {formik.errors.email && formik.touched.email ?
+                <div className="text-sm text-danger rounded-lg bg-body-tertiary p-4 text-center" role="alert">
+                  <span className="font-medium text-center">{formik.errors.email}</span>
+                </div> : ''}
+            </div>
+
+            <div className="form-group">
+              <input
+                className='form-control'
+                type="tel"
+                placeholder="Phone*"
+                id='phone'
+                value={formik.values.phone}
+                onChange={formik.handleChange}
+              />
+              {formik.errors.phone && formik.touched.phone ?
+                <div className="text-sm text-danger rounded-lg bg-body-tertiary p-4 text-center" role="alert">
+                  <span className="font-medium text-center">{formik.errors.phone}</span>
+                </div> : ''}
+            </div>
+
+            <div className="form-group">
+              <input
+                className='form-control'
+                type="password"
+                placeholder="Password*"
+                id='password'
+                value={formik.values.password}
+                onChange={formik.handleChange}
+              />
+              {formik.errors.password && formik.touched.password ?
+                <div className="text-sm text-danger rounded-lg bg-body-tertiary p-4 text-center" role="alert">
+                  <span className="font-medium text-center">{formik.errors.password}</span>
+                </div> : ''}
+            </div>
+
+            <div className="form-group">
+              <input
+                type="password"
+                className='form-control'
+                placeholder="rePassword*"
+                id='repassword'
+                value={formik.values.repassword}
+                onChange={formik.handleChange}
+              />
+              {formik.errors.repassword && formik.touched.repassword ?
+                <div className="text-sm text-danger rounded-lg bg-body-tertiary p-4 text-center" role="alert">
+                  <span className="font-medium text-center">{formik.errors.repassword}</span>
+                </div> : ''}
+            </div>
+            <div className="d-flex justify-content-center align-items-center flex-column gap-2 my-5">
+              <button type="submit" className="btn bg-black text-white px-5 py-2">Register</button>
+              <button type="submit" className="btn  px-1 py-2"><Link to='/login' className=" text-dark text-decoration-none">Already have an account</Link></button>
+            </div>
+          </form>
         </div>
-
-        <form onSubmit={formik.handleSubmit}>
-          <div className="form-group">
-            <input
-              onBlur={formik.handleBlur}
-              type="text"
-              placeholder="Username*"
-              id='name'
-              value={formik.values.name}
-              onChange={formik.handleChange}
-            />
-            {formik.errors.name && formik.touched.name ?
-              <div className="text-sm text-danger rounded-lg bg-body-tertiary p-4 text-center" role="alert">
-                <span className="font-medium text-center">{formik.errors.name}</span>
-              </div> : ''}
-          </div>
-
-          <div className="form-group">
-            <input
-              type="email"
-              placeholder="Email*"
-              id='email'
-              value={formik.values.email}
-              onChange={formik.handleChange}
-            />
-            {formik.errors.email && formik.touched.email ?
-              <div className="text-sm text-danger rounded-lg bg-body-tertiary p-4 text-center" role="alert">
-                <span className="font-medium text-center">{formik.errors.email}</span>
-              </div> : ''}
-          </div>
-
-          <div className="form-group">
-            <input
-              type="tel"
-              placeholder="Phone*"
-              id='phone'
-              value={formik.values.phone}
-              onChange={formik.handleChange}
-            />
-            {formik.errors.phone && formik.touched.phone ?
-              <div className="text-sm text-danger rounded-lg bg-body-tertiary p-4 text-center" role="alert">
-                <span className="font-medium text-center">{formik.errors.phone}</span>
-              </div> : ''}
-          </div>
-
-          <div className="form-group">
-            <input
-              type="password"
-              placeholder="Password*"
-              id='password'
-              value={formik.values.password}
-              onChange={formik.handleChange}
-            />
-            {formik.errors.password && formik.touched.password ?
-              <div className="text-sm text-danger rounded-lg bg-body-tertiary p-4 text-center" role="alert">
-                <span className="font-medium text-center">{formik.errors.password}</span>
-              </div> : ''}
-          </div>
-
-          <div className="form-group">
-            <input
-              type="password"
-              placeholder="rePassword*"
-              id='repassword'
-              value={formik.values.repassword}
-              onChange={formik.handleChange}
-            />
-            {formik.errors.repassword && formik.touched.repassword ?
-              <div className="text-sm text-danger rounded-lg bg-body-tertiary p-4 text-center" role="alert">
-                <span className="font-medium text-center">{formik.errors.repassword}</span>
-              </div> : ''}
-          </div>
-
-          <button type="submit" className="register-btn">Register</button>
-        </form>
       </div>
-    </div>
+    </div >
   );
 }

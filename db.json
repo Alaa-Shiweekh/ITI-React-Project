@@ -36,7 +36,8 @@
       "price": 200,
       "image": "/Products/earing2.jpg",
       "imagehover": "/Products/earing2hover.jpg",
-      "category": "ear"
+      "category": "ear",
+      "description": "The Dog Charm is a delightful piece that captures the essence of man's best friend. This charm is perfect for animal lovers, featuring a playful dog design that adds a touch of whimsy to any outfit. Whether you're layering it with other charms or wearing it solo, this piece is sure to start conversations and show off your love for pets."
     },
     {
       "id": "4",
@@ -44,7 +45,8 @@
       "price": 40,
       "image": "/Products/braclet1.jpg",
       "imagehover": "/Products/braclet1hover.jpg",
-      "category": "bracelet"
+      "category": "bracelet",
+      "description": "The Gold Core Bangle is a sleek and modern addition to any jewelry collection. Crafted with a simple yet elegant design, this bangle is perfect for those who appreciate minimalist style. The gold finish adds a touch of luxury, making it suitable for both casual and formal occasions."
     },
     {
       "id": "5",
@@ -52,7 +54,8 @@
       "price": 200,
       "image": "/Products/ring1.jpg",
       "imagehover": "/Products/ring1hover.jpg",
-      "category": "ring"
+      "category": "ring",
+      "description": "The Green Aventurine Moon Ring is a stunning piece that combines the beauty of natural stone with celestial design. The green aventurine stone is believed to bring luck and opportunity, while the moon shape adds a mystical touch. This ring is perfect for those who love unique and meaningful jewelry."
     },
     {
       "id": "6",
@@ -60,7 +63,8 @@
       "price": 70,
       "image": "/Products/earing4.jpg",
       "imagehover": "/Products/earing4hover.jpg",
-      "category": "ear"
+      "category": "ear",
+      "description": "The La Perla Hoops are a classic choice for any ear. These elegant hoops are designed to be both timeless and versatile, making them a staple in any jewelry box. The perfect size for everyday wear, they add just the right amount of shine to any look."
     },
     {
       "id": "7",
@@ -68,7 +72,8 @@
       "price": 40,
       "image": "/Products/ring2.jpg",
       "imagehover": "/Products/ring2hover.jpg",
-      "category": "ring"
+      "category": "ring",
+      "description": "The LABRADORITE MOON RING features a captivating labradorite stone set in a moon-shaped ring. Labradorite is known for its iridescent quality, reflecting a spectrum of colors that can mesmerize the eye. This ring is a beautiful statement piece for those who appreciate the magic of natural gemstones."
     },
     {
       "id": "8",
@@ -76,7 +81,8 @@
       "price": 90,
       "image": "/Products/earing5.jpg",
       "imagehover": "/Products/earing5hover.jpg",
-      "category": "ear"
+      "category": "ear",
+      "description": "The LARGE SUGAR EARRINGS are bold and beautiful, designed to make a statement. These earrings feature a unique sugar-like texture that catches the light, creating a sparkling effect. Perfect for special occasions or for those who love to stand out, these earrings are sure to turn heads."
     },
     {
       "id": "9",
@@ -84,7 +90,8 @@
       "price": 120,
       "image": "/Products/braclet2.jpg",
       "imagehover": "/Products/braclet2hover.jpg",
-      "category": "bracelet"
+      "category": "bracelet",
+      "description": "The LAURA BRACELET is a delicate and feminine piece that wraps gracefully around the wrist. This bracelet is perfect for those who prefer subtle elegance, with a design that can be worn alone or stacked with other bracelets for a more layered look."
     },
     {
       "id": "10",
@@ -92,7 +99,8 @@
       "price": 110,
       "image": "/Products/nec1.jpg",
       "imagehover": "/Products/nec1hover.jpg",
-      "category": "necklace"
+      "category": "necklace",
+      "description": "The LINDA NECKLACE is a chic and sophisticated accessory that adds a touch of glamour to any outfit. With its elegant design and high-quality materials, this necklace is perfect for formal events or as a luxurious addition to your everyday style."
     },
     {
       "id": "11",
@@ -100,7 +108,8 @@
       "price": 250,
       "image": "/Products/earing6.jpg",
       "imagehover": "/Products/earing6hover.jpg",
-      "category": "ear"
+      "category": "ear",
+      "description": "The MINI MAGMA HOOPS are a fiery addition to your jewelry collection. These hoops feature a magma-inspired texture that is both edgy and stylish. Perfect for those who love to express their unique personality through their accessories."
     },
     {
       "id": "12",
@@ -108,7 +117,8 @@
       "price": 65,
       "image": "/Products/numbers.jpg",
       "imagehover": "/Products/numbershover.jpg",
-      "category": "necklace"
+      "category": "necklace",
+      "description": "The NUMBER 1 CHARM is a playful and symbolic piece that celebrates achievements and milestones. Whether you're commemorating a personal best or showing support for your favorite team, this charm is a great way to showcase your pride and success."
     },
     {
       "id": "13",
@@ -116,7 +126,8 @@
       "price": 125,
       "image": "/Products/nec2.jpg",
       "imagehover": "/Products/nec2hover.jpg",
-      "category": "necklace"
+      "category": "necklace",
+      "description": "The OASIS NECKLACE is a serene and stylish piece that brings a touch of tranquility to your look. Inspired by the calming waters of an oasis, this necklace features a design that is both refreshing and chic. Perfect for those who appreciate the beauty of nature."
     },
     {
       "id": "14",
@@ -124,7 +135,8 @@
       "price": 116,
       "image": "/Products/ring3.jpg",
       "imagehover": "/Products/ring3hover.jpg",
-      "category": "ring"
+      "category": "ring",
+      "description": "The ONDA RING SET is a wave-inspired collection of rings that captures the fluidity and beauty of the ocean. Each ring in the set is designed to be worn together or separately, allowing for a variety of styling options. This set is perfect for those who love the beach and all things nautical."
     },
     {
       "id": "15",
@@ -132,7 +144,8 @@
       "price": 115,
       "image": "/Products/ring4.jpg",
       "imagehover": "/Products/ring4hover.jpg",
-      "category": "ring"
+      "category": "ring",
+      "description": "The OVAL MINI STAMP RING is a unique and personalized piece that features an oval-shaped stamp design. This ring is perfect for those who love the idea of wearing a piece of art on their finger. The stamp-like impression adds a rustic and authentic touch to any jewelry collection."
     },
     {
       "id": "16",
@@ -140,7 +153,8 @@
       "price": 80,
       "image": "/Products/braclet3.jpg",
       "imagehover": "/Products/braclet3hover.jpg",
-      "category": "bracelet"
+      "category": "bracelet",
+      "description": "The SAIA BRACELET is a delicate and intricate piece that wraps elegantly around the wrist. With its unique design and high-quality craftsmanship, this bracelet is perfect for those who appreciate the finer details in jewelry."
     },
     {
       "id": "17",
@@ -148,7 +162,8 @@
       "price": 25,
       "image": "/Products/nec3.jpg",
       "imagehover": "/Products/nec3hover.jpg",
-      "category": "necklace"
+      "category": "necklace",
+      "description": "The SAND SOLITARY NECKLACE is a simple yet striking piece that features a solitary pendant inspired by the texture of sand. This necklace is perfect for those who love minimalist design with a natural twist."
     },
     {
       "id": "18",
@@ -156,7 +171,8 @@
       "price": 100,
       "image": "/Products/nec4.jpg",
       "imagehover": "/Products/nec4hover.jpg",
-      "category": "necklace"
+      "category": "necklace",
+      "description": "The SNAKE NECKLACE is a bold and captivating piece that features a snake-inspired design. This necklace is perfect for those who are drawn to the symbolism and mystery of the snake, often associated with transformation and healing."
     },
     {
       "id": "19",
@@ -164,7 +180,8 @@
       "price": 200,
       "image": "/Products/nec5.jpg",
       "imagehover": "/Products/nec5hover.jpg",
-      "category": "necklace"
+      "category": "necklace",
+      "description": "The SPICE NECKLACE is a vibrant and colorful accessory that adds a pop of color to any outfit. Inspired by the rich hues of spices, this necklace is perfect for those who love to make a statement with their jewelry."
     },
     {
       "id": "20",
@@ -172,7 +189,8 @@
       "price": 40,
       "image": "/Products/ring5.jpg",
       "imagehover": "/Products/ring5hover.jpg",
-      "category": "ring"
+      "category": "ring",
+      "description": "The SUGAR RING SET is a sweet and charming collection of rings that are designed to be worn together or separately. Each ring in the set features a sugar-like texture that is both playful and stylish. Perfect for those with a sweet tooth and a love for unique jewelry."
     },
     {
       "id": "21",
@@ -180,7 +198,8 @@
       "price": 120,
       "image": "/Products/earing7.jpg",
       "imagehover": "/Products/earing7hover.jpg",
-      "category": "ear"
+      "category": "ear",
+      "description": "The TEXAS HOOPS are a bold and iconic piece that pays homage to the Lone Star State. These hoops are perfect for Texans or anyone who loves the spirit and pride of Texas. The unique design makes them a standout addition to any jewelry collection."
     },
     {
       "id": "22",
@@ -188,7 +207,8 @@
       "price": 20,
       "image": "/Products/braclet4.jpg",
       "imagehover": "/Products/braclet4hover.jpg",
-      "category": "bracelet"
+      "category": "bracelet",
+      "description": "The WATER BRACELET is a fluid and graceful piece that captures the movement and tranquility of water. This bracelet is perfect for those who find peace and inspiration in the natural world, with a design that flows beautifully around the wrist."
     }
   ],
   "users": [

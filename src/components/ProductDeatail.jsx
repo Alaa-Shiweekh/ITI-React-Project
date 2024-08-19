@@ -39,14 +39,15 @@ export default function ProductDeatail() {
 
   return (
     <div className="container my-5">
-      <div className="row d-flex">
+      <div className="row d-flex justify-content-center">
         {productd ? productd.map((product) => (
           <div className="col-md-4 my-2 bg-transparent" key={product.id}>
             <div className="img">
               <img src={product.image} className="w-100" alt={product.name} />
             </div>
             <p>{product.name}</p>
-            <p>{product.price}</p>
+            <p>{product.price}.00$</p>
+            <p className=' text-secondary'>{product.description}</p>
             <button className='btn' 
                     onClick={() => isInCart(product.id) ? removeFromCart(product.id) : addToCart(product)}>
               {isInCart(product.id) ? 'In Cart' : 'Add to Cart'}
