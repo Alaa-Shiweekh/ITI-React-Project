@@ -3,10 +3,10 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 
 export default function Shop() {
-  const [products, setProducts] = useState([]);
-  const [categories, setCategories] = useState([]);
-  const [selectedCategory, setSelectedCategory] = useState('');
-  const [title, setTitle] = useState('Shop');
+  let [products, setProducts] = useState([]);
+  let [categories, setCategories] = useState([]);
+  let [selectedCategory, setSelectedCategory] = useState('');
+  let [title, setTitle] = useState('Shop');
 
   useEffect(() => {
     axios.get('http://localhost:3000/products')
@@ -30,16 +30,16 @@ export default function Shop() {
       .catch(err => console.log(err));
   }, []);
 
-  const handleCategoryClick = (categoryKey, categoryName) => {
+  let handleCategoryClick = (categoryKey, categoryName) => {
     setSelectedCategory(categoryKey);
     setTitle(categoryName);
   };
 
-  const countItemsInCategory = (categoryKey) => {
+  let countItemsInCategory = (categoryKey) => {
     return products.filter(product => product.category === categoryKey).length;
   };
 
-  const filteredProducts = selectedCategory
+  let filteredProducts = selectedCategory
     ? products.filter(product => product.category === selectedCategory)
     : products;
 
@@ -90,14 +90,14 @@ export default function Shop() {
                 {filteredProducts.length > 0 ? (
                   filteredProducts.map((product) => (
                     <div className="col-md-4 my-2 bg-transparent">
-                        <div className="img">
-                          <img src={product.image} className="w-100" alt={product.name} />
-                        </div>
-                        <p>{product.name}</p>
-                        <p>{product.price}.00<span className=' text-success'>$</span></p>
-                        <p className=' text-secondary'>{product.description.slice(0, 50)}</p>
-                      <Link to={`/productdetails/${product.id}`} className=' text-decoration-none text-black'>
-                        <p>Read More <i class="fa-solid fa-arrow-right"></i></p>
+                      <div className="img">
+                        <img src={product.image} className="w-100" alt={product.name} />
+                      </div>
+                      <p>{product.name}</p>
+                      <p>{product.price}.00<span className=' text-success'>$</span></p>
+                      <p className=' text-secondary'>{product.description.slice(0, 50)}....</p>
+                      <Link to={`/productdetails/${product.id}`} className=' text-decoration-none text-black readmore'>
+                        <p>Read More <i class="fa-solid fa-angles-right fa-sm"></i></p>
                       </Link>
 
                     </div>

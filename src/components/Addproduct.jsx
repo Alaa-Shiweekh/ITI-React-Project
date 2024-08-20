@@ -26,7 +26,7 @@ export default function Addproduct() {
                     <label className="form-label">Price</label>
                     <input type="number" className="form-control" onChange={e => setInputprod({ ...inputprod, price: e.target.value })} />
                 </div>
-                <button type="submit" className="btn btn-primary">Submit</button>
+                <button type="submit" className="btn plane"><i class="fa-solid fa-paper-plane"></i> Submit</button>
             </form>
         </div>
     )

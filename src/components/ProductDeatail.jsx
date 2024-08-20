@@ -33,7 +33,7 @@ export default function ProductDeatail() {
     getdetails();
   }, []);
 
-  const isInCart = (productId) => {
+  let isInCart = (productId) => {
     return cartItems.some(item => item.id === productId);
   };
 
@@ -48,12 +48,12 @@ export default function ProductDeatail() {
             <p>{product.name}</p>
             <p>{product.price}.00$</p>
             <p className=' text-secondary'>{product.description}</p>
-            <button className='btn' 
-                    onClick={() => isInCart(product.id) ? removeFromCart(product.id) : addToCart(product)}>
-              {isInCart(product.id) ? 'In Cart' : 'Add to Cart'}
+            <button className='btn'
+              onClick={() => isInCart(product.id) ? removeFromCart(product.id) : addToCart(product)}>
+              <i class="fa-solid fa-cart-plus"></i> {isInCart(product.id) ? 'In Cart' : 'Add to Cart'}
             </button>
             {isInCart(product.id) && (
-              <button className='btn btn-link view' onClick={() => navigate('/cart')}>View Cart</button>
+              <button className='btn btn-link view text-black' onClick={() => navigate('/cart')}>View Cart</button>
             )}
           </div>
         )) : 'No Products'}

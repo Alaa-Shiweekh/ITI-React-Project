@@ -14,7 +14,7 @@
 }
 
 .contact-page h2 {
-  font-family: 'Times New Roman', serif;
+  /* font-family: 'Times New Roman', serif; */
   font-size: 28px;
   margin-bottom: 20px;
 }
@@ -77,7 +77,7 @@
 .contact-info p {
   margin-bottom: 40px;
   border-bottom: 1px solid #dddcda;
-  font-family: "Playfair Display", serif;
+  /* font-family: "Playfair Display", serif; */
 
 }
 

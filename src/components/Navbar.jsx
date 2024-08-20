@@ -3,7 +3,6 @@ import logo from '../assets/logo.png';
 import { NavLink } from 'react-router-dom';
 import { AuthContext } from '../Context/AuthContext';
 import { CartContext } from '../Context/CarContext.jsx';
-
 export default function Navbar() {
     let { isLogin, logout } = useContext(AuthContext);
     let { cartItems } = useContext(CartContext);

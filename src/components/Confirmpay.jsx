@@ -4,24 +4,24 @@ import { useNavigate } from 'react-router-dom';
 import emailjs from 'emailjs-com';
 
 export default function ConfirmPay() {
-  const { cartItems, total } = useContext(CartContext);
-  const [formData, setFormData] = useState({
+  let { cartItems, total } = useContext(CartContext);
+  let [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
     email: '',
   });
 
-  const navigate = useNavigate();
+  let navigate = useNavigate();
 
-  const handleChange = (e) => {
+  let handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  let handleSubmit = (e) => {
     e.preventDefault();
 
     
-    const templateParams = {
+    let templateParams = {
         to_name: 'Adena', 
         from_name: `${formData.firstName} ${formData.lastName}`, 
         message: `
@@ -60,7 +60,7 @@ export default function ConfirmPay() {
     <div className="container my-5">
       <div className="row confirm">
         <div className="col-md-8">
-          <h3>Check Out</h3>
+          <h3 className='cart'>Check Out</h3>
           <form onSubmit={handleSubmit}>
             <div className="form-group">
               <label htmlFor="firstName" className='lbl'>First Name</label>
@@ -158,11 +158,11 @@ export default function ConfirmPay() {
                 required 
               />
             </div>
-            <button type="submit" className="btn btn-primary mt-3">Place Order</button>
+            <button type="submit" className="btn text-black mt-3 rounded-3">Place Order</button>
           </form>
         </div>
         <div className="col-md-4 rec">
-          <h3 className='order'>Your Order</h3>
+          <h3 className='order cart'>Your Order</h3>
           <ul className="list-group">
             {cartItems.map(item => (
               <li className="list-group-item d-flex justify-content-between align-items-center" key={item.id}>

@@ -21,7 +21,8 @@ i {
   color: white !important;
   background-color: #63512d;
 }
-
+/* font-family: "Inter", sans-serif; */
+/* font-family: "Pacifico", cursive; */
 /* -------------------------------------------------------------------------------------------------general end--------------------------------------------------------------------*/
 
 /* -------------------------------------------------------------------------------------------------navbar  --------------------------------------------------------------------*/
@@ -92,9 +93,10 @@ nav,
 
 /* -------------------------------------------------------------------------------------------------Home Page end--------------------------------------------------------------------*/
 /* -------------------------------------------------------------------------------------------------Login --------------------------------------------------------------------*/
-.login{
+.login {
   background-color: #5253521d;
 }
+
 .header {
   background-image: url(../src/assets/sign.jpg);
   background-position: center;
@@ -103,13 +105,39 @@ nav,
   height: 35%;
   width: 100%;
 }
-.hight{
+
+.hight {
   height: 85vh;
 }
-.height{
+
+.height {
   height: 90vh;
 }
+
 /* -------------------------------------------------------------------------------------------------Login end--------------------------------------------------------------------*/
+/* -------------------------------------------------------------------------------------------------Dash board-------------------------------------------------------------------*/
+th{
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+td{
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+}
+
+i{
+  transition-duration: 0.3s;
+}
+.readmore:hover i{
+  transform: translateX(10px);
+}
+.plane:hover i{
+  transform: translate(0rem, -0.6ex);
+}
+/* ------------------------------------------------------------------------------------------------- cart-------------------------------------------------------------------*/
+.cart{
+  font-family: "Pacifico", cursive;
+}
 @media (max-width:768px) {
   .col-md-3 {
     flex-direction: column;
@@ -156,16 +184,16 @@ nav,
 }
 
 h2 {
-  font-family: "Playfair Display", serif;
+  /* font-family: "Playfair Display", serif; */
   font-weight: bold;
   font-size: 50px;
   margin-bottom: 35px;
 }
 
-p {
+/* p {
   font-family: "Playfair Display", serif;
   margin-bottom: 20px;
-}
+} */
 
 .btn {
   /* margin-top: 50px; */
