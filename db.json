@@ -33,7 +33,7 @@
     {
       "id": "2",
       "name": "Dog Charm",
-      "price": 200,
+      "price": "100",
       "image": "../src/assets/earing2.jpg",
       "imagehover": "../src/assets/earing2hover.jpg",
       "category": "ear",

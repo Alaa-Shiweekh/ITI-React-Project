@@ -16,6 +16,7 @@ import brand4 from '/src/assets/brand-4.png';
 import brand5 from '/src/assets/brand-5.png';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { Link } from 'react-router-dom';
 
 export default function About() {
 
@@ -52,7 +53,7 @@ export default function About() {
           <div className='textContent my-3'>
             <h3 className='cart my-3'>Enhancing Your Style</h3>
             <p className='my-5'>Together with you, enhance your temperament – affirm your luxurious beauty with impressive designs…</p>
-            <button className="btn">Shop Now</button>
+            <Link  to="/shop" className="btn">Shop Now</Link>
           </div>
         </div>
       </div>
@@ -61,7 +62,7 @@ export default function About() {
           <div className='textContent'>
             <h3 className='cart my-3'>Ensemble With Earrings</h3>
             <p className='my-5'>Genuine gold and silver jewelry for young people, elegant design, diverse designs help you perfect and transform your daily style.</p>
-            <button className="btn">Shop Now</button>
+            <Link  to="/shop" className="btn">Shop Now</Link>
           </div>
         </div>
         <div className="col-md-6">
