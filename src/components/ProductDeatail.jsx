@@ -47,7 +47,7 @@ export default function ProductDeatail() {
             </div>
             <p>{product.name}</p>
             <p>{product.price}.00$</p>
-            <p className=' text-secondary'>{product.description}</p>
+            <p className=' text-secondary my-5'>{product.description}</p>
             <button className='btn'
               onClick={() => isInCart(product.id) ? removeFromCart(product.id) : addToCart(product)}>
               <i class="fa-solid fa-cart-plus"></i> {isInCart(product.id) ? 'In Cart' : 'Add to Cart'}

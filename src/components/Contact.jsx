@@ -1,25 +1,23 @@
-
-
 import React from 'react';
 import './Contact.css';
 import img from '../assets/ContactImg.jpg';
 
 export default function Contact() {
   return (
-    <div className="container mt-5">
+   <div className="contact">
       <div className="position-relative">
-        <img src={img} alt="Contact" className="img-fluid w-100" />
-        <div className="position-absolute text-light" style={{ bottom: '0', right: '0', transform: 'translate(0%, 0%)' }}>
-          <h1 className="display-4 font-weight-bold">Contact</h1>
-          <p className="lead">
-            <a href="/" className="text-light">Home</a> &gt; Contact
-          </p>
+      <img src={img} alt="Contact" className="img-fluid w-100" />
+        <div className="position-absolute text-light p-5" style={{ bottom: '0', right: '0', transform: 'translate(0%, 0%)' }}>
+          <h3 className="display-4 font-weight-bold cart">Contact</h3>
+          <h3  className="lead cart">
+            <a href="/" className="text-light">Home</a> 
+            <i className=' fa-solid fa-arrow-right'></i>Contact
+          </h3>
         </div>
       </div>
-
-      {/* خريطة Google */}
+     <div className="container">
       <div className="mt-5">
-        <h2>Our Location</h2>
+        <h2 className='cart'>Our Location</h2>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.6914880304773!2d-0.11954338424973142!3d51.503324217145634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604c8d89f9cb9%3A0x29d16bc1602d4997!2slastminute.com%20London%20Eye!5e0!3m2!1sen!2suk!4v1596440863377!5m2!1sen!2suk"
           width="100%"
@@ -31,8 +29,6 @@ export default function Contact() {
           tabIndex="0"
         ></iframe>
       </div>
-
-      {/* نموذج التواصل */}
       <div className="container contact-page">
         <div className="row">
           <div className="col-md-8">
@@ -75,8 +71,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-
-      {/* Newsletter Signup */}
       <div className="sletter p-5 mt-5 text-center">
         <h2 className="font-weight-bold">NEWSLETTER SIGN-UP</h2>
         <p className="mb-4">Get insider information about exclusive offers, events, and more.</p>
@@ -95,6 +89,7 @@ export default function Contact() {
       </div>
     </div>
 
+   </div>
 
 
 

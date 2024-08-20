@@ -35,7 +35,7 @@ export default function Home() {
   }, []);
 
 
-  const filteredProducts = selectedCategory
+  let filteredProducts = selectedCategory
     ? products.filter(products => products.category === selectedCategory)
     : products;
   let firstThree = trend.slice(0, 3);
@@ -111,7 +111,7 @@ export default function Home() {
             <div className="col-md-6">
               <div className="container p-5">
                 <div className="banner-content my-5">
-                  <h3>Chic Petal Perfection</h3>
+                  <h3 className='my-3'>Chic Petal Perfection</h3>
                   <p>Jewelry is favored by both men and women because it shows luxury & class; own aesthetic taste, affirming position…</p>
                 </div>
                 <Link className='btn text-decoration-none text-black' to='/shop'>Shop Now</Link>

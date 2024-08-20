@@ -20,19 +20,19 @@ import Editcat from './components/Editcat.jsx'
 import Addcat from './components/Addcat.jsx'
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [isRegistered, setIsRegistered] = useState(false);
+  let [isLoggedIn, setIsLoggedIn] = useState(false);
+  let [isRegistered, setIsRegistered] = useState(false);
 
-  const handleLoginSuccess = () => {
+  let handleLoginSuccess = () => {
     setIsLoggedIn(true);
   };
 
-  const handleRegisterSuccess = () => {
+  let handleRegisterSuccess = () => {
     setIsRegistered(true);
     setIsLoggedIn(true);
   };
 
-  const routes = createBrowserRouter([
+  let routes = createBrowserRouter([
     {
       path: '/',
       element: <Layout />,
@@ -54,7 +54,7 @@ function App() {
           path: 'buy',
           element: isRegistered
             ? (isLoggedIn
-              ? <Navigate to="/confirmpay" /> // انتقل إلى صفحة تأكيد الدفع إذا كان المستخدم مسجل الدخول
+              ? <Navigate to="/confirmpay" />
               : <Navigate to="/login" />)
             : <Navigate to="/register" />
         },

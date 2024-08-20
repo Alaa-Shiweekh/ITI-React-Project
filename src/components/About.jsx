@@ -49,9 +49,9 @@ export default function About() {
           <img src={about2} alt="Enhancing Your Style" className="img-fluid" />
         </div>
         <div className="col-md-6 d-flex align-items-center">
-          <div className='textContent'>
-            <h2>Enhancing Your Style</h2>
-            <p>Together with you, enhance your temperament – affirm your luxurious beauty with impressive designs…</p>
+          <div className='textContent my-3'>
+            <h3 className='cart my-3'>Enhancing Your Style</h3>
+            <p className='my-5'>Together with you, enhance your temperament – affirm your luxurious beauty with impressive designs…</p>
             <button className="btn">Shop Now</button>
           </div>
         </div>
@@ -59,8 +59,8 @@ export default function About() {
       <div className="row my-4">
         <div className="col-md-6 d-flex align-items-center">
           <div className='textContent'>
-            <h2>Ensemble With Earrings</h2>
-            <p>Genuine gold and silver jewelry for young people, elegant design, diverse designs help you perfect and transform your daily style.</p>
+            <h3 className='cart my-3'>Ensemble With Earrings</h3>
+            <p className='my-5'>Genuine gold and silver jewelry for young people, elegant design, diverse designs help you perfect and transform your daily style.</p>
             <button className="btn">Shop Now</button>
           </div>
         </div>
@@ -70,7 +70,7 @@ export default function About() {
 
       </div>
       <div className="container mt-5">
-        <h2 className="text-center mb-4">Testimonial</h2>
+        <h2 className="text-center mb-4 cart">Testimonial</h2>
         <div className="row">
           <div className="col-lg-4">
             <div className="testimonial">
@@ -111,7 +111,7 @@ export default function About() {
         </div>
       </div>
       <section className='ins'>
-        <h2 className="special-heading">Our Instgram</h2>
+        <h3 className="special-heading cart">Our Instgram</h3>
         <p>#adenashop</p>
         <div className="row">
           <div className="col-md-3">
