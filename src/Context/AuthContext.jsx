@@ -5,24 +5,18 @@ export let AuthContext = createContext(null);
 export default function AuthContextProvider({ children }) {
     let [isLogin, setLogin] = useState(null);
     useEffect(() => {
-        let storedLogin = localStorage.getItem('isLogin');
+        let storedLogin = localStorage.getItem('User');
         if (storedLogin) {
             setLogin(JSON.parse(storedLogin));
         }
     }, []);
-
-    let login = (newUser) => {
-        setLogin(newUser);
-        localStorage.setItem('isLogin', JSON.stringify(newUser));
-    };
-
     let logout = () => {
         setLogin(null);
-        localStorage.removeItem('isLogin');
+        localStorage.removeItem('User');
     };
 
     return (
-        <AuthContext.Provider value={{ isLogin, login, logout }}>
+        <AuthContext.Provider value={{ isLogin, logout ,setLogin}}>
             {children}
         </AuthContext.Provider>
     );

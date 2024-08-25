@@ -213,21 +213,13 @@
   ],
   "users": [
     {
-      "id": "263b",
+      "id": "5de8",
       "name": "Hanan",
-      "email": "hananamer312003@gmail.com",
-      "password": "Hanan123",
-      "repassword": "Hanan123",
-      "phone": "01212734139"
-    },
-    {
-      "id": "44cc",
-      "name": "Hanan",
-      "email": "admin@gmail.com",
-      "password": "admin123",
-      "repassword": "admin123",
+      "email": "Hanan@gmail.com",
+      "password": "hanan123",
+      "repassword": "hanan123",
       "phone": "01212734139",
-      "isAdmin": true
+      "isAdmin": false
     }
   ]
 }

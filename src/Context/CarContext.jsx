@@ -1,13 +1,20 @@
-import React, { createContext, useState } from 'react';
-import PropTypes from 'prop-types'; 
+import React, { createContext, useState,useEffect } from 'react';
 
-export const CartContext = createContext();
+export let CartContext = createContext();
 
 export function CartProvider({ children }) {
-  const [cartItems, setCartItems] = useState([]);
+  let [cartItems, setCartItems] = useState([]);
+  useEffect(() => {
+    let storedCartItems = JSON.parse(localStorage.getItem('cartItems')) ;
+    setCartItems(storedCartItems);
+  }, []);
 
-  const addToCart = (product) => {
-    const existingItem = cartItems.find(item => item.id === product.id);
+  useEffect(() => {
+    localStorage.setItem('cartItems', JSON.stringify(cartItems));
+  }, [cartItems]);
+  
+  let addToCart = (product) => {
+    let existingItem = cartItems.find(item => item.id === product.id);
     if (existingItem) {
       setCartItems(cartItems.map(item =>
         item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
@@ -17,11 +24,11 @@ export function CartProvider({ children }) {
     }
   };
 
-  const removeFromCart = (productId) => {
+  let removeFromCart = (productId) => {
     setCartItems(cartItems.filter(item => item.id !== productId));
   };
 
-  const total = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
+  let total = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
   return (
     <CartContext.Provider value={{ cartItems, addToCart, removeFromCart, total, setCartItems }}>
@@ -29,7 +36,3 @@ export function CartProvider({ children }) {
     </CartContext.Provider>
   );
 }
-
-CartProvider.propTypes = {
-  children: PropTypes.node.isRequired,
-};

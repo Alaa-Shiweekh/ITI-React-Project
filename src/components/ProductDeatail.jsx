@@ -39,14 +39,19 @@ export default function ProductDeatail() {
 
   return (
     <div className="container my-5">
-      <div className="row d-flex justify-content-center">
+      <div className="row d-flex">
         {productd ? productd.map((product) => (
-          <div className="col-md-4 my-2 bg-transparent" key={product.id}>
-            <div className="img">
+          <div className="col-md-6 my-2 bg-transparent" key={product.id}>
+            <div className="img d-flex w-50 gap-3">
               <img src={product.image} className="w-100" alt={product.name} />
+              <img src={product.imagehover} className="w-100" alt={product.name} />
             </div>
-            <p>{product.name}</p>
-            <p>{product.price}.00$</p>
+          </div>
+        )) : 'No Products'}
+        {productd ? productd.map((product) => (
+          <div className="col-md-6">
+            <h4>{product.name}</h4>
+            <p className='text-muted'>{product.price}.00<span className=' text-success'>$</span></p>
             <p className=' text-secondary my-5'>{product.description}</p>
             <button className='btn'
               onClick={() => isInCart(product.id) ? removeFromCart(product.id) : addToCart(product)}>
@@ -56,7 +61,9 @@ export default function ProductDeatail() {
               <button className='btn btn-link view text-black' onClick={() => navigate('/cart')}>View Cart</button>
             )}
           </div>
-        )) : 'No Products'}
+
+        )) : ''}
+
       </div>
     </div>
   );

@@ -1,3 +1,14 @@
+.home-color {
+  background-color: #ece6de;
+}
+
+.other-color {
+  background-color: #fff;
+}
+
+.navbar a {
+  color: white;
+}
 /* -------------------------------------------------------------------------------------------------general  --------------------------------------------------------------------*/
 .pic{
   transition-duration: 0.3s;
@@ -27,16 +38,13 @@ i {
   color: white !important;
   background-color: #63512d;
 }
-/* font-family: "Inter", sans-serif; */
-/* font-family: "Pacifico", cursive; */
+
 /* -------------------------------------------------------------------------------------------------general end--------------------------------------------------------------------*/
 
 /* -------------------------------------------------------------------------------------------------navbar  --------------------------------------------------------------------*/
-nav,
 .banner {
   background-color: #ece6de !important;
 }
-
 .nav-hover:hover .page {
   color: #63512d !important;
 }
@@ -98,27 +106,16 @@ nav,
 
 /* -------------------------------------------------------------------------------------------------Home Page end--------------------------------------------------------------------*/
 /* -------------------------------------------------------------------------------------------------Login --------------------------------------------------------------------*/
-.login {
-  background-color: #5253521d;
+.register{
+  font-family:"Pacifico", cursive;  
+  font-weight: 500;
+  font-size: 30px;
 }
 
-.header {
-  background-image: url(../src/assets/sign.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 35%;
-  width: 100%;
+.form-control:focus{
+  border-color: #817459 !important;
+  box-shadow: 0 1px 2px #e1cca1 !important;
 }
-
-.hight {
-  height: 85vh;
-}
-
-.height {
-  height: 90vh;
-}
-
 /* -------------------------------------------------------------------------------------------------Login end--------------------------------------------------------------------*/
 /* -------------------------------------------------------------------------------------------------Dash board-------------------------------------------------------------------*/
 th{
@@ -143,7 +140,20 @@ i{
 .cart{
   font-family: "Pacifico", cursive;
 }
-@media (max-width:768px) {
+.empty{
+  width: 500px;
+}
+
+h4,.read,.shop{
+  font-family: "Playfair Display", serif;
+}
+.cat{
+  transition-duration: 0.3s;
+}
+.cat:hover{
+transform: scale(0.9);
+}
+/* @media (max-width:768px) {
   .col-md-3 {
     flex-direction: column;
     text-align: center;
@@ -165,7 +175,7 @@ i{
     max-width: 198%;
     height: auto;
   }
-}
+} */
 
 
 .img-fluid1 {
